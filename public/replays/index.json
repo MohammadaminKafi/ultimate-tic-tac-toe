@@ -1,0 +1,6411 @@
+[
+  {
+    "version": 1,
+    "id": "AI_log_31_01_2024_14_33_50_6vs3",
+    "createdAt": "2024-01-31T14:33:50Z",
+    "label": "Historic AI match \u00b7 depth 6 vs 3",
+    "mode": "ai-ai",
+    "players": {
+      "X": "ai",
+      "O": "ai"
+    },
+    "depths": {
+      "X": 6,
+      "O": 3
+    },
+    "outcome": "X",
+    "moves": [
+      {
+        "board": 0,
+        "cell": 4,
+        "player": "X"
+      },
+      {
+        "board": 4,
+        "cell": 2,
+        "player": "O"
+      },
+      {
+        "board": 2,
+        "cell": 2,
+        "player": "X"
+      },
+      {
+        "board": 2,
+        "cell": 4,
+        "player": "O"
+      },
+      {
+        "board": 4,
+        "cell": 6,
+        "player": "X"
+      },
+      {
+        "board": 6,
+        "cell": 6,
+        "player": "O"
+      },
+      {
+        "board": 6,
+        "cell": 1,
+        "player": "X"
+      },
+      {
+        "board": 1,
+        "cell": 8,
+        "player": "O"
+      },
+      {
+        "board": 8,
+        "cell": 8,
+        "player": "X"
+      },
+      {
+        "board": 8,
+        "cell": 1,
+        "player": "O"
+      },
+      {
+        "board": 1,
+        "cell": 3,
+        "player": "X"
+      },
+      {
+        "board": 3,
+        "cell": 3,
+        "player": "O"
+      },
+      {
+        "board": 3,
+        "cell": 0,
+        "player": "X"
+      },
+      {
+        "board": 0,
+        "cell": 5,
+        "player": "O"
+      },
+      {
+        "board": 5,
+        "cell": 5,
+        "player": "X"
+      },
+      {
+        "board": 5,
+        "cell": 7,
+        "player": "O"
+      },
+      {
+        "board": 7,
+        "cell": 7,
+        "player": "X"
+      },
+      {
+        "board": 7,
+        "cell": 0,
+        "player": "O"
+      },
+      {
+        "board": 0,
+        "cell": 8,
+        "player": "X"
+      },
+      {
+        "board": 8,
+        "cell": 2,
+        "player": "O"
+      },
+      {
+        "board": 2,
+        "cell": 0,
+        "player": "X"
+      },
+      {
+        "board": 0,
+        "cell": 0,
+        "player": "O"
+      },
+      {
+        "board": 0,
+        "cell": 6,
+        "player": "X"
+      },
+      {
+        "board": 6,
+        "cell": 4,
+        "player": "O"
+      },
+      {
+        "board": 4,
+        "cell": 0,
+        "player": "X"
+      },
+      {
+        "board": 0,
+        "cell": 1,
+        "player": "O"
+      },
+      {
+        "board": 1,
+        "cell": 5,
+        "player": "X"
+      },
+      {
+        "board": 5,
+        "cell": 8,
+        "player": "O"
+      },
+      {
+        "board": 8,
+        "cell": 7,
+        "player": "X"
+      },
+      {
+        "board": 7,
+        "cell": 3,
+        "player": "O"
+      },
+      {
+        "board": 3,
+        "cell": 1,
+        "player": "X"
+      },
+      {
+        "board": 1,
+        "cell": 6,
+        "player": "O"
+      },
+      {
+        "board": 6,
+        "cell": 2,
+        "player": "X"
+      },
+      {
+        "board": 2,
+        "cell": 5,
+        "player": "O"
+      },
+      {
+        "board": 5,
+        "cell": 3,
+        "player": "X"
+      },
+      {
+        "board": 3,
+        "cell": 6,
+        "player": "O"
+      },
+      {
+        "board": 6,
+        "cell": 0,
+        "player": "X"
+      },
+      {
+        "board": 0,
+        "cell": 7,
+        "player": "O"
+      },
+      {
+        "board": 7,
+        "cell": 8,
+        "player": "X"
+      },
+      {
+        "board": 8,
+        "cell": 0,
+        "player": "O"
+      },
+      {
+        "board": 0,
+        "cell": 2,
+        "player": "X"
+      },
+      {
+        "board": 2,
+        "cell": 7,
+        "player": "O"
+      },
+      {
+        "board": 7,
+        "cell": 1,
+        "player": "X"
+      },
+      {
+        "board": 1,
+        "cell": 7,
+        "player": "O"
+      },
+      {
+        "board": 7,
+        "cell": 2,
+        "player": "X"
+      },
+      {
+        "board": 2,
+        "cell": 1,
+        "player": "O"
+      },
+      {
+        "board": 3,
+        "cell": 2,
+        "player": "X"
+      }
+    ],
+    "telemetry": [
+      {
+        "turn": 1,
+        "player": "X",
+        "move": {
+          "board": 0,
+          "cell": 4,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 16626.97196006775,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 2,
+        "player": "O",
+        "move": {
+          "board": 4,
+          "cell": 2,
+          "player": "O"
+        },
+        "score": 0.0,
+        "elapsedMs": 41.89658164978027,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 3,
+        "player": "X",
+        "move": {
+          "board": 2,
+          "cell": 2,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 8303.821563720703,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 4,
+        "player": "O",
+        "move": {
+          "board": 2,
+          "cell": 4,
+          "player": "O"
+        },
+        "score": 0.0,
+        "elapsedMs": 41.9764518737793,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 5,
+        "player": "X",
+        "move": {
+          "board": 4,
+          "cell": 6,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 9970.987796783447,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 6,
+        "player": "O",
+        "move": {
+          "board": 6,
+          "cell": 6,
+          "player": "O"
+        },
+        "score": 0.0,
+        "elapsedMs": 46.74029350280762,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 7,
+        "player": "X",
+        "move": {
+          "board": 6,
+          "cell": 1,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 6161.803722381592,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 8,
+        "player": "O",
+        "move": {
+          "board": 1,
+          "cell": 8,
+          "player": "O"
+        },
+        "score": -0.25,
+        "elapsedMs": 44.017791748046875,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 9,
+        "player": "X",
+        "move": {
+          "board": 8,
+          "cell": 8,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 3924.9393939971924,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 10,
+        "player": "O",
+        "move": {
+          "board": 8,
+          "cell": 1,
+          "player": "O"
+        },
+        "score": 0.0,
+        "elapsedMs": 60.09197235107422,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 11,
+        "player": "X",
+        "move": {
+          "board": 1,
+          "cell": 3,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 3667.80686378479,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 12,
+        "player": "O",
+        "move": {
+          "board": 3,
+          "cell": 3,
+          "player": "O"
+        },
+        "score": 0.0,
+        "elapsedMs": 43.23983192443848,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 13,
+        "player": "X",
+        "move": {
+          "board": 3,
+          "cell": 0,
+          "player": "X"
+        },
+        "score": -0.25,
+        "elapsedMs": 3469.623804092407,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 14,
+        "player": "O",
+        "move": {
+          "board": 0,
+          "cell": 5,
+          "player": "O"
+        },
+        "score": -0.25,
+        "elapsedMs": 57.49249458312988,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 15,
+        "player": "X",
+        "move": {
+          "board": 5,
+          "cell": 5,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 3537.274122238159,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 16,
+        "player": "O",
+        "move": {
+          "board": 5,
+          "cell": 7,
+          "player": "O"
+        },
+        "score": -0.25,
+        "elapsedMs": 50.1859188079834,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 17,
+        "player": "X",
+        "move": {
+          "board": 7,
+          "cell": 7,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 4071.452856063843,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 18,
+        "player": "O",
+        "move": {
+          "board": 7,
+          "cell": 0,
+          "player": "O"
+        },
+        "score": 0.0,
+        "elapsedMs": 38.039445877075195,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 19,
+        "player": "X",
+        "move": {
+          "board": 0,
+          "cell": 8,
+          "player": "X"
+        },
+        "score": 0.25,
+        "elapsedMs": 4626.067399978638,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 20,
+        "player": "O",
+        "move": {
+          "board": 8,
+          "cell": 2,
+          "player": "O"
+        },
+        "score": 0.0,
+        "elapsedMs": 52.65069007873535,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 21,
+        "player": "X",
+        "move": {
+          "board": 2,
+          "cell": 0,
+          "player": "X"
+        },
+        "score": 0.75,
+        "elapsedMs": 3697.716236114502,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 22,
+        "player": "O",
+        "move": {
+          "board": 0,
+          "cell": 0,
+          "player": "O"
+        },
+        "score": 1.0,
+        "elapsedMs": 335.4213237762451,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 23,
+        "player": "X",
+        "move": {
+          "board": 0,
+          "cell": 6,
+          "player": "X"
+        },
+        "score": 1.25,
+        "elapsedMs": 1490.919828414917,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 24,
+        "player": "O",
+        "move": {
+          "board": 6,
+          "cell": 4,
+          "player": "O"
+        },
+        "score": 0.75,
+        "elapsedMs": 38.38324546813965,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 25,
+        "player": "X",
+        "move": {
+          "board": 4,
+          "cell": 0,
+          "player": "X"
+        },
+        "score": 1.25,
+        "elapsedMs": 1320.8096027374268,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 26,
+        "player": "O",
+        "move": {
+          "board": 0,
+          "cell": 1,
+          "player": "O"
+        },
+        "score": 1.5,
+        "elapsedMs": 24.646759033203125,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 27,
+        "player": "X",
+        "move": {
+          "board": 1,
+          "cell": 5,
+          "player": "X"
+        },
+        "score": 1.25,
+        "elapsedMs": 2568.8982009887695,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 28,
+        "player": "O",
+        "move": {
+          "board": 5,
+          "cell": 8,
+          "player": "O"
+        },
+        "score": 1.25,
+        "elapsedMs": 51.459550857543945,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 29,
+        "player": "X",
+        "move": {
+          "board": 8,
+          "cell": 7,
+          "player": "X"
+        },
+        "score": 1.25,
+        "elapsedMs": 2111.503839492798,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 30,
+        "player": "O",
+        "move": {
+          "board": 7,
+          "cell": 3,
+          "player": "O"
+        },
+        "score": 1.25,
+        "elapsedMs": 52.610158920288086,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 31,
+        "player": "X",
+        "move": {
+          "board": 3,
+          "cell": 1,
+          "player": "X"
+        },
+        "score": 2.5,
+        "elapsedMs": 1177.9131889343262,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 32,
+        "player": "O",
+        "move": {
+          "board": 1,
+          "cell": 6,
+          "player": "O"
+        },
+        "score": 1.25,
+        "elapsedMs": 143.16463470458984,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 33,
+        "player": "X",
+        "move": {
+          "board": 6,
+          "cell": 2,
+          "player": "X"
+        },
+        "score": 2.0,
+        "elapsedMs": 1276.5095233917236,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 34,
+        "player": "O",
+        "move": {
+          "board": 2,
+          "cell": 5,
+          "player": "O"
+        },
+        "score": 2.5,
+        "elapsedMs": 41.65053367614746,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 35,
+        "player": "X",
+        "move": {
+          "board": 5,
+          "cell": 3,
+          "player": "X"
+        },
+        "score": 7.0,
+        "elapsedMs": 1497.4191188812256,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 36,
+        "player": "O",
+        "move": {
+          "board": 3,
+          "cell": 6,
+          "player": "O"
+        },
+        "score": 3.75,
+        "elapsedMs": 186.2494945526123,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 37,
+        "player": "X",
+        "move": {
+          "board": 6,
+          "cell": 0,
+          "player": "X"
+        },
+        "score": 33.0,
+        "elapsedMs": 346.29178047180176,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 38,
+        "player": "O",
+        "move": {
+          "board": 0,
+          "cell": 7,
+          "player": "O"
+        },
+        "score": 15.5,
+        "elapsedMs": 16.531944274902344,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 39,
+        "player": "X",
+        "move": {
+          "board": 7,
+          "cell": 8,
+          "player": "X"
+        },
+        "score": 46.0,
+        "elapsedMs": 1260.4548931121826,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 40,
+        "player": "O",
+        "move": {
+          "board": 8,
+          "cell": 0,
+          "player": "O"
+        },
+        "score": 16.25,
+        "elapsedMs": 20.563840866088867,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 41,
+        "player": "X",
+        "move": {
+          "board": 0,
+          "cell": 2,
+          "player": "X"
+        },
+        "score": 81.25,
+        "elapsedMs": 1090.2800559997559,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 42,
+        "player": "O",
+        "move": {
+          "board": 2,
+          "cell": 7,
+          "player": "O"
+        },
+        "score": 46.0,
+        "elapsedMs": 62.59751319885254,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 43,
+        "player": "X",
+        "move": {
+          "board": 7,
+          "cell": 1,
+          "player": "X"
+        },
+        "score": 86.25,
+        "elapsedMs": 1779.3571949005127,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 44,
+        "player": "O",
+        "move": {
+          "board": 1,
+          "cell": 7,
+          "player": "O"
+        },
+        "score": 61.5,
+        "elapsedMs": 55.350303649902344,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 45,
+        "player": "X",
+        "move": {
+          "board": 7,
+          "cell": 2,
+          "player": "X"
+        },
+        "score": 1000000,
+        "elapsedMs": 1175.6939888000488,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 46,
+        "player": "O",
+        "move": {
+          "board": 2,
+          "cell": 1,
+          "player": "O"
+        },
+        "score": 1000000,
+        "elapsedMs": 31.288623809814453,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 47,
+        "player": "X",
+        "move": {
+          "board": 3,
+          "cell": 2,
+          "player": "X"
+        },
+        "score": 1000000,
+        "elapsedMs": 2235.243320465088,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "id": "AI_log_31_01_2024_14_37_35_6vs5",
+    "createdAt": "2024-01-31T14:37:35Z",
+    "label": "Historic AI match \u00b7 depth 6 vs 5",
+    "mode": "ai-ai",
+    "players": {
+      "X": "ai",
+      "O": "ai"
+    },
+    "depths": {
+      "X": 6,
+      "O": 5
+    },
+    "outcome": "X",
+    "moves": [
+      {
+        "board": 0,
+        "cell": 4,
+        "player": "X"
+      },
+      {
+        "board": 4,
+        "cell": 2,
+        "player": "O"
+      },
+      {
+        "board": 2,
+        "cell": 2,
+        "player": "X"
+      },
+      {
+        "board": 2,
+        "cell": 4,
+        "player": "O"
+      },
+      {
+        "board": 4,
+        "cell": 6,
+        "player": "X"
+      },
+      {
+        "board": 6,
+        "cell": 6,
+        "player": "O"
+      },
+      {
+        "board": 6,
+        "cell": 1,
+        "player": "X"
+      },
+      {
+        "board": 1,
+        "cell": 1,
+        "player": "O"
+      },
+      {
+        "board": 1,
+        "cell": 3,
+        "player": "X"
+      },
+      {
+        "board": 3,
+        "cell": 3,
+        "player": "O"
+      },
+      {
+        "board": 3,
+        "cell": 5,
+        "player": "X"
+      },
+      {
+        "board": 5,
+        "cell": 5,
+        "player": "O"
+      },
+      {
+        "board": 5,
+        "cell": 0,
+        "player": "X"
+      },
+      {
+        "board": 0,
+        "cell": 7,
+        "player": "O"
+      },
+      {
+        "board": 7,
+        "cell": 7,
+        "player": "X"
+      },
+      {
+        "board": 7,
+        "cell": 0,
+        "player": "O"
+      },
+      {
+        "board": 0,
+        "cell": 8,
+        "player": "X"
+      },
+      {
+        "board": 8,
+        "cell": 7,
+        "player": "O"
+      },
+      {
+        "board": 7,
+        "cell": 8,
+        "player": "X"
+      },
+      {
+        "board": 8,
+        "cell": 8,
+        "player": "O"
+      },
+      {
+        "board": 8,
+        "cell": 6,
+        "player": "X"
+      },
+      {
+        "board": 6,
+        "cell": 3,
+        "player": "O"
+      },
+      {
+        "board": 3,
+        "cell": 0,
+        "player": "X"
+      },
+      {
+        "board": 0,
+        "cell": 2,
+        "player": "O"
+      },
+      {
+        "board": 2,
+        "cell": 5,
+        "player": "X"
+      },
+      {
+        "board": 5,
+        "cell": 3,
+        "player": "O"
+      },
+      {
+        "board": 3,
+        "cell": 8,
+        "player": "X"
+      },
+      {
+        "board": 8,
+        "cell": 4,
+        "player": "O"
+      },
+      {
+        "board": 4,
+        "cell": 3,
+        "player": "X"
+      },
+      {
+        "board": 3,
+        "cell": 6,
+        "player": "O"
+      },
+      {
+        "board": 6,
+        "cell": 0,
+        "player": "X"
+      },
+      {
+        "board": 0,
+        "cell": 0,
+        "player": "O"
+      },
+      {
+        "board": 0,
+        "cell": 3,
+        "player": "X"
+      },
+      {
+        "board": 3,
+        "cell": 1,
+        "player": "O"
+      },
+      {
+        "board": 1,
+        "cell": 5,
+        "player": "X"
+      },
+      {
+        "board": 5,
+        "cell": 8,
+        "player": "O"
+      },
+      {
+        "board": 8,
+        "cell": 3,
+        "player": "X"
+      },
+      {
+        "board": 3,
+        "cell": 7,
+        "player": "O"
+      },
+      {
+        "board": 7,
+        "cell": 6,
+        "player": "X"
+      },
+      {
+        "board": 6,
+        "cell": 2,
+        "player": "O"
+      },
+      {
+        "board": 2,
+        "cell": 8,
+        "player": "X"
+      },
+      {
+        "board": 8,
+        "cell": 5,
+        "player": "O"
+      },
+      {
+        "board": 5,
+        "cell": 1,
+        "player": "X"
+      },
+      {
+        "board": 1,
+        "cell": 6,
+        "player": "O"
+      },
+      {
+        "board": 6,
+        "cell": 5,
+        "player": "X"
+      },
+      {
+        "board": 5,
+        "cell": 6,
+        "player": "O"
+      },
+      {
+        "board": 6,
+        "cell": 4,
+        "player": "X"
+      },
+      {
+        "board": 4,
+        "cell": 5,
+        "player": "O"
+      },
+      {
+        "board": 5,
+        "cell": 2,
+        "player": "X"
+      },
+      {
+        "board": 0,
+        "cell": 6,
+        "player": "O"
+      },
+      {
+        "board": 6,
+        "cell": 8,
+        "player": "X"
+      },
+      {
+        "board": 8,
+        "cell": 0,
+        "player": "O"
+      },
+      {
+        "board": 0,
+        "cell": 1,
+        "player": "X"
+      },
+      {
+        "board": 1,
+        "cell": 0,
+        "player": "O"
+      },
+      {
+        "board": 0,
+        "cell": 5,
+        "player": "X"
+      },
+      {
+        "board": 1,
+        "cell": 2,
+        "player": "O"
+      },
+      {
+        "board": 3,
+        "cell": 2,
+        "player": "X"
+      }
+    ],
+    "telemetry": [
+      {
+        "turn": 1,
+        "player": "X",
+        "move": {
+          "board": 0,
+          "cell": 4,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 16979.453325271606,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 2,
+        "player": "O",
+        "move": {
+          "board": 4,
+          "cell": 2,
+          "player": "O"
+        },
+        "score": 0.0,
+        "elapsedMs": 1084.7337245941162,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 3,
+        "player": "X",
+        "move": {
+          "board": 2,
+          "cell": 2,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 7736.053705215454,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 4,
+        "player": "O",
+        "move": {
+          "board": 2,
+          "cell": 4,
+          "player": "O"
+        },
+        "score": 0.0,
+        "elapsedMs": 2096.0590839385986,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 5,
+        "player": "X",
+        "move": {
+          "board": 4,
+          "cell": 6,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 9495.39828300476,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 6,
+        "player": "O",
+        "move": {
+          "board": 6,
+          "cell": 6,
+          "player": "O"
+        },
+        "score": 0.0,
+        "elapsedMs": 2548.779249191284,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 7,
+        "player": "X",
+        "move": {
+          "board": 6,
+          "cell": 1,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 5440.311431884766,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 8,
+        "player": "O",
+        "move": {
+          "board": 1,
+          "cell": 1,
+          "player": "O"
+        },
+        "score": 0.0,
+        "elapsedMs": 2107.9952716827393,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 9,
+        "player": "X",
+        "move": {
+          "board": 1,
+          "cell": 3,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 5994.947671890259,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 10,
+        "player": "O",
+        "move": {
+          "board": 3,
+          "cell": 3,
+          "player": "O"
+        },
+        "score": 0.0,
+        "elapsedMs": 1962.3408317565918,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 11,
+        "player": "X",
+        "move": {
+          "board": 3,
+          "cell": 5,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 6338.101148605347,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 12,
+        "player": "O",
+        "move": {
+          "board": 5,
+          "cell": 5,
+          "player": "O"
+        },
+        "score": 0.0,
+        "elapsedMs": 1832.789421081543,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 13,
+        "player": "X",
+        "move": {
+          "board": 5,
+          "cell": 0,
+          "player": "X"
+        },
+        "score": -0.25,
+        "elapsedMs": 4548.268556594849,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 14,
+        "player": "O",
+        "move": {
+          "board": 0,
+          "cell": 7,
+          "player": "O"
+        },
+        "score": -0.25,
+        "elapsedMs": 2324.0768909454346,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 15,
+        "player": "X",
+        "move": {
+          "board": 7,
+          "cell": 7,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 6586.441993713379,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 16,
+        "player": "O",
+        "move": {
+          "board": 7,
+          "cell": 0,
+          "player": "O"
+        },
+        "score": 0.0,
+        "elapsedMs": 1948.77028465271,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 17,
+        "player": "X",
+        "move": {
+          "board": 0,
+          "cell": 8,
+          "player": "X"
+        },
+        "score": 1.25,
+        "elapsedMs": 7586.152791976929,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 18,
+        "player": "O",
+        "move": {
+          "board": 8,
+          "cell": 7,
+          "player": "O"
+        },
+        "score": 1.25,
+        "elapsedMs": 2667.855739593506,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 19,
+        "player": "X",
+        "move": {
+          "board": 7,
+          "cell": 8,
+          "player": "X"
+        },
+        "score": 1.5,
+        "elapsedMs": 7305.555582046509,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 20,
+        "player": "O",
+        "move": {
+          "board": 8,
+          "cell": 8,
+          "player": "O"
+        },
+        "score": 1.5,
+        "elapsedMs": 2053.2805919647217,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 21,
+        "player": "X",
+        "move": {
+          "board": 8,
+          "cell": 6,
+          "player": "X"
+        },
+        "score": 1.75,
+        "elapsedMs": 5470.713138580322,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 22,
+        "player": "O",
+        "move": {
+          "board": 6,
+          "cell": 3,
+          "player": "O"
+        },
+        "score": 1.75,
+        "elapsedMs": 1952.7926445007324,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 23,
+        "player": "X",
+        "move": {
+          "board": 3,
+          "cell": 0,
+          "player": "X"
+        },
+        "score": 1.75,
+        "elapsedMs": 4190.666675567627,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 24,
+        "player": "O",
+        "move": {
+          "board": 0,
+          "cell": 2,
+          "player": "O"
+        },
+        "score": 1.75,
+        "elapsedMs": 808.1700801849365,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 25,
+        "player": "X",
+        "move": {
+          "board": 2,
+          "cell": 5,
+          "player": "X"
+        },
+        "score": 1.75,
+        "elapsedMs": 3431.9050312042236,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 26,
+        "player": "O",
+        "move": {
+          "board": 5,
+          "cell": 3,
+          "player": "O"
+        },
+        "score": 1.75,
+        "elapsedMs": 1020.6811428070068,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 27,
+        "player": "X",
+        "move": {
+          "board": 3,
+          "cell": 8,
+          "player": "X"
+        },
+        "score": 2.75,
+        "elapsedMs": 4868.994235992432,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 28,
+        "player": "O",
+        "move": {
+          "board": 8,
+          "cell": 4,
+          "player": "O"
+        },
+        "score": 2.75,
+        "elapsedMs": 1954.6618461608887,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 29,
+        "player": "X",
+        "move": {
+          "board": 4,
+          "cell": 3,
+          "player": "X"
+        },
+        "score": 2.5,
+        "elapsedMs": 2577.5516033172607,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 30,
+        "player": "O",
+        "move": {
+          "board": 3,
+          "cell": 6,
+          "player": "O"
+        },
+        "score": 2.5,
+        "elapsedMs": 385.3898048400879,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 31,
+        "player": "X",
+        "move": {
+          "board": 6,
+          "cell": 0,
+          "player": "X"
+        },
+        "score": 3.75,
+        "elapsedMs": 2169.332504272461,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 32,
+        "player": "O",
+        "move": {
+          "board": 0,
+          "cell": 0,
+          "player": "O"
+        },
+        "score": 3.75,
+        "elapsedMs": 392.75383949279785,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 33,
+        "player": "X",
+        "move": {
+          "board": 0,
+          "cell": 3,
+          "player": "X"
+        },
+        "score": 3.75,
+        "elapsedMs": 910.7060432434082,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 34,
+        "player": "O",
+        "move": {
+          "board": 3,
+          "cell": 1,
+          "player": "O"
+        },
+        "score": 3.75,
+        "elapsedMs": 537.6589298248291,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 35,
+        "player": "X",
+        "move": {
+          "board": 1,
+          "cell": 5,
+          "player": "X"
+        },
+        "score": 4.5,
+        "elapsedMs": 2514.0223503112793,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 36,
+        "player": "O",
+        "move": {
+          "board": 5,
+          "cell": 8,
+          "player": "O"
+        },
+        "score": 4.5,
+        "elapsedMs": 757.4255466461182,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 37,
+        "player": "X",
+        "move": {
+          "board": 8,
+          "cell": 3,
+          "player": "X"
+        },
+        "score": 8.0,
+        "elapsedMs": 1458.3275318145752,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 38,
+        "player": "O",
+        "move": {
+          "board": 3,
+          "cell": 7,
+          "player": "O"
+        },
+        "score": 8.0,
+        "elapsedMs": 265.6054496765137,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 39,
+        "player": "X",
+        "move": {
+          "board": 7,
+          "cell": 6,
+          "player": "X"
+        },
+        "score": 15.0,
+        "elapsedMs": 1406.7111015319824,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 40,
+        "player": "O",
+        "move": {
+          "board": 6,
+          "cell": 2,
+          "player": "O"
+        },
+        "score": 15.0,
+        "elapsedMs": 295.64380645751953,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 41,
+        "player": "X",
+        "move": {
+          "board": 2,
+          "cell": 8,
+          "player": "X"
+        },
+        "score": 27.0,
+        "elapsedMs": 1226.7849445343018,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 42,
+        "player": "O",
+        "move": {
+          "board": 8,
+          "cell": 5,
+          "player": "O"
+        },
+        "score": 27.0,
+        "elapsedMs": 443.01843643188477,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 43,
+        "player": "X",
+        "move": {
+          "board": 5,
+          "cell": 1,
+          "player": "X"
+        },
+        "score": 60.0,
+        "elapsedMs": 648.2594013214111,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 44,
+        "player": "O",
+        "move": {
+          "board": 1,
+          "cell": 6,
+          "player": "O"
+        },
+        "score": 60.0,
+        "elapsedMs": 349.4915962219238,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 45,
+        "player": "X",
+        "move": {
+          "board": 6,
+          "cell": 5,
+          "player": "X"
+        },
+        "score": 52.5,
+        "elapsedMs": 1033.1594944000244,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 46,
+        "player": "O",
+        "move": {
+          "board": 5,
+          "cell": 6,
+          "player": "O"
+        },
+        "score": 52.5,
+        "elapsedMs": 527.8770923614502,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 47,
+        "player": "X",
+        "move": {
+          "board": 6,
+          "cell": 4,
+          "player": "X"
+        },
+        "score": 41.25,
+        "elapsedMs": 641.1135196685791,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 48,
+        "player": "O",
+        "move": {
+          "board": 4,
+          "cell": 5,
+          "player": "O"
+        },
+        "score": 41.25,
+        "elapsedMs": 431.962251663208,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 49,
+        "player": "X",
+        "move": {
+          "board": 5,
+          "cell": 2,
+          "player": "X"
+        },
+        "score": 88.0,
+        "elapsedMs": 2023.0278968811035,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 50,
+        "player": "O",
+        "move": {
+          "board": 0,
+          "cell": 6,
+          "player": "O"
+        },
+        "score": 88.0,
+        "elapsedMs": 2166.4023399353027,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 51,
+        "player": "X",
+        "move": {
+          "board": 6,
+          "cell": 8,
+          "player": "X"
+        },
+        "score": 1000000,
+        "elapsedMs": 1865.5200004577637,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 52,
+        "player": "O",
+        "move": {
+          "board": 8,
+          "cell": 0,
+          "player": "O"
+        },
+        "score": 1000000,
+        "elapsedMs": 435.56785583496094,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 53,
+        "player": "X",
+        "move": {
+          "board": 0,
+          "cell": 1,
+          "player": "X"
+        },
+        "score": 1000000,
+        "elapsedMs": 236.12236976623535,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 54,
+        "player": "O",
+        "move": {
+          "board": 1,
+          "cell": 0,
+          "player": "O"
+        },
+        "score": 1000000,
+        "elapsedMs": 183.12931060791016,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 55,
+        "player": "X",
+        "move": {
+          "board": 0,
+          "cell": 5,
+          "player": "X"
+        },
+        "score": 1000000,
+        "elapsedMs": 182.88207054138184,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 56,
+        "player": "O",
+        "move": {
+          "board": 1,
+          "cell": 2,
+          "player": "O"
+        },
+        "score": 1000000,
+        "elapsedMs": 72.61991500854492,
+        "depth": 5,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 57,
+        "player": "X",
+        "move": {
+          "board": 3,
+          "cell": 2,
+          "player": "X"
+        },
+        "score": 1000000,
+        "elapsedMs": 48.57969284057617,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "id": "AI_log_31_01_2024_14_39_35_6vs4",
+    "createdAt": "2024-01-31T14:39:35Z",
+    "label": "Historic AI match \u00b7 depth 6 vs 4",
+    "mode": "ai-ai",
+    "players": {
+      "X": "ai",
+      "O": "ai"
+    },
+    "depths": {
+      "X": 6,
+      "O": 4
+    },
+    "outcome": "X",
+    "moves": [
+      {
+        "board": 0,
+        "cell": 4,
+        "player": "X"
+      },
+      {
+        "board": 4,
+        "cell": 2,
+        "player": "O"
+      },
+      {
+        "board": 2,
+        "cell": 2,
+        "player": "X"
+      },
+      {
+        "board": 2,
+        "cell": 4,
+        "player": "O"
+      },
+      {
+        "board": 4,
+        "cell": 6,
+        "player": "X"
+      },
+      {
+        "board": 6,
+        "cell": 6,
+        "player": "O"
+      },
+      {
+        "board": 6,
+        "cell": 1,
+        "player": "X"
+      },
+      {
+        "board": 1,
+        "cell": 1,
+        "player": "O"
+      },
+      {
+        "board": 1,
+        "cell": 3,
+        "player": "X"
+      },
+      {
+        "board": 3,
+        "cell": 3,
+        "player": "O"
+      },
+      {
+        "board": 3,
+        "cell": 5,
+        "player": "X"
+      },
+      {
+        "board": 5,
+        "cell": 5,
+        "player": "O"
+      },
+      {
+        "board": 5,
+        "cell": 0,
+        "player": "X"
+      },
+      {
+        "board": 0,
+        "cell": 7,
+        "player": "O"
+      },
+      {
+        "board": 7,
+        "cell": 7,
+        "player": "X"
+      },
+      {
+        "board": 7,
+        "cell": 1,
+        "player": "O"
+      },
+      {
+        "board": 1,
+        "cell": 4,
+        "player": "X"
+      },
+      {
+        "board": 4,
+        "cell": 8,
+        "player": "O"
+      },
+      {
+        "board": 8,
+        "cell": 8,
+        "player": "X"
+      },
+      {
+        "board": 8,
+        "cell": 0,
+        "player": "O"
+      },
+      {
+        "board": 0,
+        "cell": 6,
+        "player": "X"
+      },
+      {
+        "board": 6,
+        "cell": 3,
+        "player": "O"
+      },
+      {
+        "board": 3,
+        "cell": 2,
+        "player": "X"
+      },
+      {
+        "board": 2,
+        "cell": 5,
+        "player": "O"
+      },
+      {
+        "board": 5,
+        "cell": 8,
+        "player": "X"
+      },
+      {
+        "board": 8,
+        "cell": 3,
+        "player": "O"
+      },
+      {
+        "board": 3,
+        "cell": 1,
+        "player": "X"
+      },
+      {
+        "board": 1,
+        "cell": 5,
+        "player": "O"
+      },
+      {
+        "board": 5,
+        "cell": 3,
+        "player": "X"
+      },
+      {
+        "board": 3,
+        "cell": 8,
+        "player": "O"
+      },
+      {
+        "board": 8,
+        "cell": 5,
+        "player": "X"
+      },
+      {
+        "board": 5,
+        "cell": 4,
+        "player": "O"
+      },
+      {
+        "board": 4,
+        "cell": 0,
+        "player": "X"
+      },
+      {
+        "board": 0,
+        "cell": 2,
+        "player": "O"
+      },
+      {
+        "board": 2,
+        "cell": 1,
+        "player": "X"
+      },
+      {
+        "board": 1,
+        "cell": 6,
+        "player": "O"
+      },
+      {
+        "board": 6,
+        "cell": 7,
+        "player": "X"
+      },
+      {
+        "board": 7,
+        "cell": 5,
+        "player": "O"
+      },
+      {
+        "board": 5,
+        "cell": 7,
+        "player": "X"
+      },
+      {
+        "board": 7,
+        "cell": 0,
+        "player": "O"
+      },
+      {
+        "board": 0,
+        "cell": 0,
+        "player": "X"
+      },
+      {
+        "board": 0,
+        "cell": 1,
+        "player": "O"
+      },
+      {
+        "board": 1,
+        "cell": 0,
+        "player": "X"
+      },
+      {
+        "board": 0,
+        "cell": 5,
+        "player": "O"
+      },
+      {
+        "board": 5,
+        "cell": 6,
+        "player": "X"
+      },
+      {
+        "board": 6,
+        "cell": 0,
+        "player": "O"
+      },
+      {
+        "board": 0,
+        "cell": 3,
+        "player": "X"
+      },
+      {
+        "board": 3,
+        "cell": 7,
+        "player": "O"
+      },
+      {
+        "board": 7,
+        "cell": 3,
+        "player": "X"
+      },
+      {
+        "board": 3,
+        "cell": 6,
+        "player": "O"
+      },
+      {
+        "board": 8,
+        "cell": 2,
+        "player": "X"
+      },
+      {
+        "board": 2,
+        "cell": 0,
+        "player": "O"
+      },
+      {
+        "board": 1,
+        "cell": 2,
+        "player": "X"
+      },
+      {
+        "board": 2,
+        "cell": 3,
+        "player": "O"
+      },
+      {
+        "board": 1,
+        "cell": 7,
+        "player": "X"
+      },
+      {
+        "board": 7,
+        "cell": 2,
+        "player": "O"
+      },
+      {
+        "board": 4,
+        "cell": 1,
+        "player": "X"
+      },
+      {
+        "board": 1,
+        "cell": 8,
+        "player": "O"
+      },
+      {
+        "board": 4,
+        "cell": 3,
+        "player": "X"
+      }
+    ],
+    "telemetry": [
+      {
+        "turn": 1,
+        "player": "X",
+        "move": {
+          "board": 0,
+          "cell": 4,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 16149.704933166504,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 2,
+        "player": "O",
+        "move": {
+          "board": 4,
+          "cell": 2,
+          "player": "O"
+        },
+        "score": 0.75,
+        "elapsedMs": 200.76537132263184,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 3,
+        "player": "X",
+        "move": {
+          "board": 2,
+          "cell": 2,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 8003.928661346436,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 4,
+        "player": "O",
+        "move": {
+          "board": 2,
+          "cell": 4,
+          "player": "O"
+        },
+        "score": 0.75,
+        "elapsedMs": 216.16053581237793,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 5,
+        "player": "X",
+        "move": {
+          "board": 4,
+          "cell": 6,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 9916.900634765625,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 6,
+        "player": "O",
+        "move": {
+          "board": 6,
+          "cell": 6,
+          "player": "O"
+        },
+        "score": 0.75,
+        "elapsedMs": 205.29437065124512,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 7,
+        "player": "X",
+        "move": {
+          "board": 6,
+          "cell": 1,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 6110.475778579712,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 8,
+        "player": "O",
+        "move": {
+          "board": 1,
+          "cell": 1,
+          "player": "O"
+        },
+        "score": 0.75,
+        "elapsedMs": 177.02770233154297,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 9,
+        "player": "X",
+        "move": {
+          "board": 1,
+          "cell": 3,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 6512.563705444336,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 10,
+        "player": "O",
+        "move": {
+          "board": 3,
+          "cell": 3,
+          "player": "O"
+        },
+        "score": 0.75,
+        "elapsedMs": 184.8776340484619,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 11,
+        "player": "X",
+        "move": {
+          "board": 3,
+          "cell": 5,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 6673.754692077637,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 12,
+        "player": "O",
+        "move": {
+          "board": 5,
+          "cell": 5,
+          "player": "O"
+        },
+        "score": 0.75,
+        "elapsedMs": 204.17189598083496,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 13,
+        "player": "X",
+        "move": {
+          "board": 5,
+          "cell": 0,
+          "player": "X"
+        },
+        "score": -0.25,
+        "elapsedMs": 4990.92173576355,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 14,
+        "player": "O",
+        "move": {
+          "board": 0,
+          "cell": 7,
+          "player": "O"
+        },
+        "score": 1.0,
+        "elapsedMs": 328.8726806640625,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 15,
+        "player": "X",
+        "move": {
+          "board": 7,
+          "cell": 7,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 6800.490379333496,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 16,
+        "player": "O",
+        "move": {
+          "board": 7,
+          "cell": 1,
+          "player": "O"
+        },
+        "score": 1.0,
+        "elapsedMs": 218.91427040100098,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 17,
+        "player": "X",
+        "move": {
+          "board": 1,
+          "cell": 4,
+          "player": "X"
+        },
+        "score": 0.25,
+        "elapsedMs": 3877.5370121002197,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 18,
+        "player": "O",
+        "move": {
+          "board": 4,
+          "cell": 8,
+          "player": "O"
+        },
+        "score": 2.0,
+        "elapsedMs": 221.65679931640625,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 19,
+        "player": "X",
+        "move": {
+          "board": 8,
+          "cell": 8,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 4631.832122802734,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 20,
+        "player": "O",
+        "move": {
+          "board": 8,
+          "cell": 0,
+          "player": "O"
+        },
+        "score": 2.0,
+        "elapsedMs": 121.75679206848145,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 21,
+        "player": "X",
+        "move": {
+          "board": 0,
+          "cell": 6,
+          "player": "X"
+        },
+        "score": 0.5,
+        "elapsedMs": 5068.2573318481445,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 22,
+        "player": "O",
+        "move": {
+          "board": 6,
+          "cell": 3,
+          "player": "O"
+        },
+        "score": 2.25,
+        "elapsedMs": 207.67521858215332,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 23,
+        "player": "X",
+        "move": {
+          "board": 3,
+          "cell": 2,
+          "player": "X"
+        },
+        "score": 0.75,
+        "elapsedMs": 2643.0346965789795,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 24,
+        "player": "O",
+        "move": {
+          "board": 2,
+          "cell": 5,
+          "player": "O"
+        },
+        "score": 2.5,
+        "elapsedMs": 439.18395042419434,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 25,
+        "player": "X",
+        "move": {
+          "board": 5,
+          "cell": 8,
+          "player": "X"
+        },
+        "score": 1.0,
+        "elapsedMs": 2177.8810024261475,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 26,
+        "player": "O",
+        "move": {
+          "board": 8,
+          "cell": 3,
+          "player": "O"
+        },
+        "score": 3.0,
+        "elapsedMs": 369.11725997924805,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 27,
+        "player": "X",
+        "move": {
+          "board": 3,
+          "cell": 1,
+          "player": "X"
+        },
+        "score": 1.0,
+        "elapsedMs": 1848.6826419830322,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 28,
+        "player": "O",
+        "move": {
+          "board": 1,
+          "cell": 5,
+          "player": "O"
+        },
+        "score": 3.75,
+        "elapsedMs": 168.0314540863037,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 29,
+        "player": "X",
+        "move": {
+          "board": 5,
+          "cell": 3,
+          "player": "X"
+        },
+        "score": 0.75,
+        "elapsedMs": 1438.060998916626,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 30,
+        "player": "O",
+        "move": {
+          "board": 3,
+          "cell": 8,
+          "player": "O"
+        },
+        "score": 2.75,
+        "elapsedMs": 198.05550575256348,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 31,
+        "player": "X",
+        "move": {
+          "board": 8,
+          "cell": 5,
+          "player": "X"
+        },
+        "score": 0.5,
+        "elapsedMs": 1275.5777835845947,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 32,
+        "player": "O",
+        "move": {
+          "board": 5,
+          "cell": 4,
+          "player": "O"
+        },
+        "score": 2.25,
+        "elapsedMs": 82.5955867767334,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 33,
+        "player": "X",
+        "move": {
+          "board": 4,
+          "cell": 0,
+          "player": "X"
+        },
+        "score": 0.25,
+        "elapsedMs": 1122.3373413085938,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 34,
+        "player": "O",
+        "move": {
+          "board": 0,
+          "cell": 2,
+          "player": "O"
+        },
+        "score": 3.25,
+        "elapsedMs": 121.78421020507812,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 35,
+        "player": "X",
+        "move": {
+          "board": 2,
+          "cell": 1,
+          "player": "X"
+        },
+        "score": -0.75,
+        "elapsedMs": 790.1718616485596,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 36,
+        "player": "O",
+        "move": {
+          "board": 1,
+          "cell": 6,
+          "player": "O"
+        },
+        "score": 4.25,
+        "elapsedMs": 83.02569389343262,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 37,
+        "player": "X",
+        "move": {
+          "board": 6,
+          "cell": 7,
+          "player": "X"
+        },
+        "score": 2.25,
+        "elapsedMs": 691.6894912719727,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 38,
+        "player": "O",
+        "move": {
+          "board": 7,
+          "cell": 5,
+          "player": "O"
+        },
+        "score": 5.5,
+        "elapsedMs": 82.60226249694824,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 39,
+        "player": "X",
+        "move": {
+          "board": 5,
+          "cell": 7,
+          "player": "X"
+        },
+        "score": 2.5,
+        "elapsedMs": 412.0001792907715,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 40,
+        "player": "O",
+        "move": {
+          "board": 7,
+          "cell": 0,
+          "player": "O"
+        },
+        "score": 7.0,
+        "elapsedMs": 60.56022644042969,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 41,
+        "player": "X",
+        "move": {
+          "board": 0,
+          "cell": 0,
+          "player": "X"
+        },
+        "score": 4.0,
+        "elapsedMs": 349.6208190917969,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 42,
+        "player": "O",
+        "move": {
+          "board": 0,
+          "cell": 1,
+          "player": "O"
+        },
+        "score": 11.5,
+        "elapsedMs": 51.589012145996094,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 43,
+        "player": "X",
+        "move": {
+          "board": 1,
+          "cell": 0,
+          "player": "X"
+        },
+        "score": 9.0,
+        "elapsedMs": 313.5228157043457,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 44,
+        "player": "O",
+        "move": {
+          "board": 0,
+          "cell": 5,
+          "player": "O"
+        },
+        "score": 19.0,
+        "elapsedMs": 79.97775077819824,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 45,
+        "player": "X",
+        "move": {
+          "board": 5,
+          "cell": 6,
+          "player": "X"
+        },
+        "score": 6.0,
+        "elapsedMs": 365.4649257659912,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 46,
+        "player": "O",
+        "move": {
+          "board": 6,
+          "cell": 0,
+          "player": "O"
+        },
+        "score": 25.0,
+        "elapsedMs": 100.77190399169922,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 47,
+        "player": "X",
+        "move": {
+          "board": 0,
+          "cell": 3,
+          "player": "X"
+        },
+        "score": 24.5,
+        "elapsedMs": 1132.3325634002686,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 48,
+        "player": "O",
+        "move": {
+          "board": 3,
+          "cell": 7,
+          "player": "O"
+        },
+        "score": 77.5,
+        "elapsedMs": 400.23303031921387,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 49,
+        "player": "X",
+        "move": {
+          "board": 7,
+          "cell": 3,
+          "player": "X"
+        },
+        "score": 45.5,
+        "elapsedMs": 1763.2644176483154,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 50,
+        "player": "O",
+        "move": {
+          "board": 3,
+          "cell": 6,
+          "player": "O"
+        },
+        "score": 90.0,
+        "elapsedMs": 465.7139778137207,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 51,
+        "player": "X",
+        "move": {
+          "board": 8,
+          "cell": 2,
+          "player": "X"
+        },
+        "score": 1000000,
+        "elapsedMs": 2543.4436798095703,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 52,
+        "player": "O",
+        "move": {
+          "board": 2,
+          "cell": 0,
+          "player": "O"
+        },
+        "score": 1000000,
+        "elapsedMs": 390.95187187194824,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 53,
+        "player": "X",
+        "move": {
+          "board": 1,
+          "cell": 2,
+          "player": "X"
+        },
+        "score": 1000000,
+        "elapsedMs": 479.29835319519043,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 54,
+        "player": "O",
+        "move": {
+          "board": 2,
+          "cell": 3,
+          "player": "O"
+        },
+        "score": 1000000,
+        "elapsedMs": 160.5699062347412,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 55,
+        "player": "X",
+        "move": {
+          "board": 1,
+          "cell": 7,
+          "player": "X"
+        },
+        "score": 1000000,
+        "elapsedMs": 229.7983169555664,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 56,
+        "player": "O",
+        "move": {
+          "board": 7,
+          "cell": 2,
+          "player": "O"
+        },
+        "score": 1000000,
+        "elapsedMs": 38.54179382324219,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 57,
+        "player": "X",
+        "move": {
+          "board": 4,
+          "cell": 1,
+          "player": "X"
+        },
+        "score": 1000000,
+        "elapsedMs": 89.49542045593262,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 58,
+        "player": "O",
+        "move": {
+          "board": 1,
+          "cell": 8,
+          "player": "O"
+        },
+        "score": 1000000,
+        "elapsedMs": 5.461454391479492,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 59,
+        "player": "X",
+        "move": {
+          "board": 4,
+          "cell": 3,
+          "player": "X"
+        },
+        "score": 1000000,
+        "elapsedMs": 6.988763809204102,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "id": "AI_log_31_01_2024_14_41_24_4vs6",
+    "createdAt": "2024-01-31T14:41:24Z",
+    "label": "Historic AI match \u00b7 depth 4 vs 6",
+    "mode": "ai-ai",
+    "players": {
+      "X": "ai",
+      "O": "ai"
+    },
+    "depths": {
+      "X": 4,
+      "O": 6
+    },
+    "outcome": "O",
+    "moves": [
+      {
+        "board": 0,
+        "cell": 4,
+        "player": "X"
+      },
+      {
+        "board": 4,
+        "cell": 2,
+        "player": "O"
+      },
+      {
+        "board": 2,
+        "cell": 2,
+        "player": "X"
+      },
+      {
+        "board": 2,
+        "cell": 4,
+        "player": "O"
+      },
+      {
+        "board": 4,
+        "cell": 6,
+        "player": "X"
+      },
+      {
+        "board": 6,
+        "cell": 1,
+        "player": "O"
+      },
+      {
+        "board": 1,
+        "cell": 8,
+        "player": "X"
+      },
+      {
+        "board": 8,
+        "cell": 3,
+        "player": "O"
+      },
+      {
+        "board": 3,
+        "cell": 1,
+        "player": "X"
+      },
+      {
+        "board": 1,
+        "cell": 5,
+        "player": "O"
+      },
+      {
+        "board": 5,
+        "cell": 1,
+        "player": "X"
+      },
+      {
+        "board": 1,
+        "cell": 4,
+        "player": "O"
+      },
+      {
+        "board": 4,
+        "cell": 3,
+        "player": "X"
+      },
+      {
+        "board": 3,
+        "cell": 6,
+        "player": "O"
+      },
+      {
+        "board": 6,
+        "cell": 5,
+        "player": "X"
+      },
+      {
+        "board": 5,
+        "cell": 0,
+        "player": "O"
+      },
+      {
+        "board": 0,
+        "cell": 7,
+        "player": "X"
+      },
+      {
+        "board": 7,
+        "cell": 8,
+        "player": "O"
+      },
+      {
+        "board": 8,
+        "cell": 0,
+        "player": "X"
+      },
+      {
+        "board": 0,
+        "cell": 1,
+        "player": "O"
+      },
+      {
+        "board": 1,
+        "cell": 6,
+        "player": "X"
+      },
+      {
+        "board": 6,
+        "cell": 7,
+        "player": "O"
+      },
+      {
+        "board": 7,
+        "cell": 6,
+        "player": "X"
+      },
+      {
+        "board": 6,
+        "cell": 8,
+        "player": "O"
+      },
+      {
+        "board": 8,
+        "cell": 2,
+        "player": "X"
+      },
+      {
+        "board": 2,
+        "cell": 5,
+        "player": "O"
+      },
+      {
+        "board": 5,
+        "cell": 4,
+        "player": "X"
+      },
+      {
+        "board": 4,
+        "cell": 0,
+        "player": "O"
+      },
+      {
+        "board": 0,
+        "cell": 8,
+        "player": "X"
+      },
+      {
+        "board": 8,
+        "cell": 4,
+        "player": "O"
+      },
+      {
+        "board": 4,
+        "cell": 5,
+        "player": "X"
+      },
+      {
+        "board": 5,
+        "cell": 6,
+        "player": "O"
+      },
+      {
+        "board": 6,
+        "cell": 3,
+        "player": "X"
+      },
+      {
+        "board": 3,
+        "cell": 7,
+        "player": "O"
+      },
+      {
+        "board": 7,
+        "cell": 3,
+        "player": "X"
+      },
+      {
+        "board": 3,
+        "cell": 2,
+        "player": "O"
+      },
+      {
+        "board": 2,
+        "cell": 3,
+        "player": "X"
+      },
+      {
+        "board": 3,
+        "cell": 3,
+        "player": "O"
+      },
+      {
+        "board": 3,
+        "cell": 0,
+        "player": "X"
+      },
+      {
+        "board": 0,
+        "cell": 3,
+        "player": "O"
+      },
+      {
+        "board": 3,
+        "cell": 8,
+        "player": "X"
+      },
+      {
+        "board": 8,
+        "cell": 5,
+        "player": "O"
+      },
+      {
+        "board": 5,
+        "cell": 7,
+        "player": "X"
+      },
+      {
+        "board": 7,
+        "cell": 0,
+        "player": "O"
+      },
+      {
+        "board": 0,
+        "cell": 2,
+        "player": "X"
+      },
+      {
+        "board": 2,
+        "cell": 0,
+        "player": "O"
+      },
+      {
+        "board": 0,
+        "cell": 6,
+        "player": "X"
+      },
+      {
+        "board": 6,
+        "cell": 4,
+        "player": "O"
+      },
+      {
+        "board": 4,
+        "cell": 1,
+        "player": "X"
+      },
+      {
+        "board": 1,
+        "cell": 3,
+        "player": "O"
+      },
+      {
+        "board": 3,
+        "cell": 4,
+        "player": "X"
+      },
+      {
+        "board": 4,
+        "cell": 4,
+        "player": "O"
+      },
+      {
+        "board": 4,
+        "cell": 7,
+        "player": "X"
+      },
+      {
+        "board": 7,
+        "cell": 2,
+        "player": "O"
+      },
+      {
+        "board": 2,
+        "cell": 1,
+        "player": "X"
+      },
+      {
+        "board": 2,
+        "cell": 7,
+        "player": "O"
+      },
+      {
+        "board": 7,
+        "cell": 1,
+        "player": "X"
+      },
+      {
+        "board": 4,
+        "cell": 8,
+        "player": "O"
+      },
+      {
+        "board": 2,
+        "cell": 6,
+        "player": "X"
+      },
+      {
+        "board": 2,
+        "cell": 8,
+        "player": "O"
+      }
+    ],
+    "telemetry": [
+      {
+        "turn": 1,
+        "player": "X",
+        "move": {
+          "board": 0,
+          "cell": 4,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 646.5299129486084,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 2,
+        "player": "O",
+        "move": {
+          "board": 4,
+          "cell": 2,
+          "player": "O"
+        },
+        "score": 0.75,
+        "elapsedMs": 3998.9211559295654,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 3,
+        "player": "X",
+        "move": {
+          "board": 2,
+          "cell": 2,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 544.5830821990967,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 4,
+        "player": "O",
+        "move": {
+          "board": 2,
+          "cell": 4,
+          "player": "O"
+        },
+        "score": 0.75,
+        "elapsedMs": 4971.003770828247,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 5,
+        "player": "X",
+        "move": {
+          "board": 4,
+          "cell": 6,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 296.89669609069824,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 6,
+        "player": "O",
+        "move": {
+          "board": 6,
+          "cell": 1,
+          "player": "O"
+        },
+        "score": 1.0,
+        "elapsedMs": 5217.464923858643,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 7,
+        "player": "X",
+        "move": {
+          "board": 1,
+          "cell": 8,
+          "player": "X"
+        },
+        "score": 0.25,
+        "elapsedMs": 294.2948341369629,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 8,
+        "player": "O",
+        "move": {
+          "board": 8,
+          "cell": 3,
+          "player": "O"
+        },
+        "score": 1.0,
+        "elapsedMs": 4586.395502090454,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 9,
+        "player": "X",
+        "move": {
+          "board": 3,
+          "cell": 1,
+          "player": "X"
+        },
+        "score": 0.25,
+        "elapsedMs": 219.17963027954102,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 10,
+        "player": "O",
+        "move": {
+          "board": 1,
+          "cell": 5,
+          "player": "O"
+        },
+        "score": 1.0,
+        "elapsedMs": 4167.060136795044,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 11,
+        "player": "X",
+        "move": {
+          "board": 5,
+          "cell": 1,
+          "player": "X"
+        },
+        "score": 0.25,
+        "elapsedMs": 542.2556400299072,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 12,
+        "player": "O",
+        "move": {
+          "board": 1,
+          "cell": 4,
+          "player": "O"
+        },
+        "score": 0.75,
+        "elapsedMs": 3530.8163166046143,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 13,
+        "player": "X",
+        "move": {
+          "board": 4,
+          "cell": 3,
+          "player": "X"
+        },
+        "score": 0.0,
+        "elapsedMs": 156.86297416687012,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 14,
+        "player": "O",
+        "move": {
+          "board": 3,
+          "cell": 6,
+          "player": "O"
+        },
+        "score": 0.75,
+        "elapsedMs": 4104.003190994263,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 15,
+        "player": "X",
+        "move": {
+          "board": 6,
+          "cell": 5,
+          "player": "X"
+        },
+        "score": -0.25,
+        "elapsedMs": 512.920618057251,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 16,
+        "player": "O",
+        "move": {
+          "board": 5,
+          "cell": 0,
+          "player": "O"
+        },
+        "score": 1.5,
+        "elapsedMs": 4777.012586593628,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 17,
+        "player": "X",
+        "move": {
+          "board": 0,
+          "cell": 7,
+          "player": "X"
+        },
+        "score": -0.25,
+        "elapsedMs": 392.2996520996094,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 18,
+        "player": "O",
+        "move": {
+          "board": 7,
+          "cell": 8,
+          "player": "O"
+        },
+        "score": 1.5,
+        "elapsedMs": 5188.76051902771,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 19,
+        "player": "X",
+        "move": {
+          "board": 8,
+          "cell": 0,
+          "player": "X"
+        },
+        "score": -0.5,
+        "elapsedMs": 167.35434532165527,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 20,
+        "player": "O",
+        "move": {
+          "board": 0,
+          "cell": 1,
+          "player": "O"
+        },
+        "score": 1.5,
+        "elapsedMs": 3727.052927017212,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 21,
+        "player": "X",
+        "move": {
+          "board": 1,
+          "cell": 6,
+          "player": "X"
+        },
+        "score": -1.25,
+        "elapsedMs": 164.98136520385742,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 22,
+        "player": "O",
+        "move": {
+          "board": 6,
+          "cell": 7,
+          "player": "O"
+        },
+        "score": 1.0,
+        "elapsedMs": 2593.348264694214,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 23,
+        "player": "X",
+        "move": {
+          "board": 7,
+          "cell": 6,
+          "player": "X"
+        },
+        "score": -1.25,
+        "elapsedMs": 186.4321231842041,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 24,
+        "player": "O",
+        "move": {
+          "board": 6,
+          "cell": 8,
+          "player": "O"
+        },
+        "score": 0.75,
+        "elapsedMs": 2502.5315284729004,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 25,
+        "player": "X",
+        "move": {
+          "board": 8,
+          "cell": 2,
+          "player": "X"
+        },
+        "score": -1.5,
+        "elapsedMs": 137.32504844665527,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 26,
+        "player": "O",
+        "move": {
+          "board": 2,
+          "cell": 5,
+          "player": "O"
+        },
+        "score": 1.5,
+        "elapsedMs": 2252.497673034668,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 27,
+        "player": "X",
+        "move": {
+          "board": 5,
+          "cell": 4,
+          "player": "X"
+        },
+        "score": -1.25,
+        "elapsedMs": 311.3117218017578,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 28,
+        "player": "O",
+        "move": {
+          "board": 4,
+          "cell": 0,
+          "player": "O"
+        },
+        "score": 1.0,
+        "elapsedMs": 754.3036937713623,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 29,
+        "player": "X",
+        "move": {
+          "board": 0,
+          "cell": 8,
+          "player": "X"
+        },
+        "score": -1.25,
+        "elapsedMs": 204.54096794128418,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 30,
+        "player": "O",
+        "move": {
+          "board": 8,
+          "cell": 4,
+          "player": "O"
+        },
+        "score": 2.0,
+        "elapsedMs": 2285.4223251342773,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 31,
+        "player": "X",
+        "move": {
+          "board": 4,
+          "cell": 5,
+          "player": "X"
+        },
+        "score": -1.75,
+        "elapsedMs": 415.485143661499,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 32,
+        "player": "O",
+        "move": {
+          "board": 5,
+          "cell": 6,
+          "player": "O"
+        },
+        "score": 0.75,
+        "elapsedMs": 2780.238628387451,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 33,
+        "player": "X",
+        "move": {
+          "board": 6,
+          "cell": 3,
+          "player": "X"
+        },
+        "score": -3.25,
+        "elapsedMs": 139.23311233520508,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 34,
+        "player": "O",
+        "move": {
+          "board": 3,
+          "cell": 7,
+          "player": "O"
+        },
+        "score": 2.0,
+        "elapsedMs": 5119.45652961731,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 35,
+        "player": "X",
+        "move": {
+          "board": 7,
+          "cell": 3,
+          "player": "X"
+        },
+        "score": -3.25,
+        "elapsedMs": 130.079984664917,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 36,
+        "player": "O",
+        "move": {
+          "board": 3,
+          "cell": 2,
+          "player": "O"
+        },
+        "score": 3.0,
+        "elapsedMs": 4295.495271682739,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 37,
+        "player": "X",
+        "move": {
+          "board": 2,
+          "cell": 3,
+          "player": "X"
+        },
+        "score": -2.75,
+        "elapsedMs": 83.47725868225098,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 38,
+        "player": "O",
+        "move": {
+          "board": 3,
+          "cell": 3,
+          "player": "O"
+        },
+        "score": 0.75,
+        "elapsedMs": 3499.143123626709,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 39,
+        "player": "X",
+        "move": {
+          "board": 3,
+          "cell": 0,
+          "player": "X"
+        },
+        "score": -5.5,
+        "elapsedMs": 50.48012733459473,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 40,
+        "player": "O",
+        "move": {
+          "board": 0,
+          "cell": 3,
+          "player": "O"
+        },
+        "score": 1.0,
+        "elapsedMs": 2404.3657779693604,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 41,
+        "player": "X",
+        "move": {
+          "board": 3,
+          "cell": 8,
+          "player": "X"
+        },
+        "score": -8.25,
+        "elapsedMs": 57.91044235229492,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 42,
+        "player": "O",
+        "move": {
+          "board": 8,
+          "cell": 5,
+          "player": "O"
+        },
+        "score": 1.0,
+        "elapsedMs": 1077.8312683105469,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 43,
+        "player": "X",
+        "move": {
+          "board": 5,
+          "cell": 7,
+          "player": "X"
+        },
+        "score": -8.25,
+        "elapsedMs": 210.05964279174805,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 44,
+        "player": "O",
+        "move": {
+          "board": 7,
+          "cell": 0,
+          "player": "O"
+        },
+        "score": -11.0,
+        "elapsedMs": 2403.24068069458,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 45,
+        "player": "X",
+        "move": {
+          "board": 0,
+          "cell": 2,
+          "player": "X"
+        },
+        "score": -46.25,
+        "elapsedMs": 630.2814483642578,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 46,
+        "player": "O",
+        "move": {
+          "board": 2,
+          "cell": 0,
+          "player": "O"
+        },
+        "score": -38.75,
+        "elapsedMs": 2199.061393737793,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 47,
+        "player": "X",
+        "move": {
+          "board": 0,
+          "cell": 6,
+          "player": "X"
+        },
+        "score": -63.0,
+        "elapsedMs": 682.4448108673096,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 48,
+        "player": "O",
+        "move": {
+          "board": 6,
+          "cell": 4,
+          "player": "O"
+        },
+        "score": -38.5,
+        "elapsedMs": 4683.55393409729,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 49,
+        "player": "X",
+        "move": {
+          "board": 4,
+          "cell": 1,
+          "player": "X"
+        },
+        "score": -61.5,
+        "elapsedMs": 721.2591171264648,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 50,
+        "player": "O",
+        "move": {
+          "board": 1,
+          "cell": 3,
+          "player": "O"
+        },
+        "score": -1000000,
+        "elapsedMs": 1954.6353816986084,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 51,
+        "player": "X",
+        "move": {
+          "board": 3,
+          "cell": 4,
+          "player": "X"
+        },
+        "score": -1000000,
+        "elapsedMs": 73.47750663757324,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 52,
+        "player": "O",
+        "move": {
+          "board": 4,
+          "cell": 4,
+          "player": "O"
+        },
+        "score": -1000000,
+        "elapsedMs": 528.1994342803955,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 53,
+        "player": "X",
+        "move": {
+          "board": 4,
+          "cell": 7,
+          "player": "X"
+        },
+        "score": -1000000,
+        "elapsedMs": 80.7957649230957,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 54,
+        "player": "O",
+        "move": {
+          "board": 7,
+          "cell": 2,
+          "player": "O"
+        },
+        "score": -1000000,
+        "elapsedMs": 399.1692066192627,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 55,
+        "player": "X",
+        "move": {
+          "board": 2,
+          "cell": 1,
+          "player": "X"
+        },
+        "score": -1000000,
+        "elapsedMs": 117.58208274841309,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 56,
+        "player": "O",
+        "move": {
+          "board": 2,
+          "cell": 7,
+          "player": "O"
+        },
+        "score": -1000000,
+        "elapsedMs": 88.07659149169922,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 57,
+        "player": "X",
+        "move": {
+          "board": 7,
+          "cell": 1,
+          "player": "X"
+        },
+        "score": -1000000,
+        "elapsedMs": 52.939414978027344,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 58,
+        "player": "O",
+        "move": {
+          "board": 4,
+          "cell": 8,
+          "player": "O"
+        },
+        "score": -1000000,
+        "elapsedMs": 31.54277801513672,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 59,
+        "player": "X",
+        "move": {
+          "board": 2,
+          "cell": 6,
+          "player": "X"
+        },
+        "score": -1000000,
+        "elapsedMs": 13.796091079711914,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 60,
+        "player": "O",
+        "move": {
+          "board": 2,
+          "cell": 8,
+          "player": "O"
+        },
+        "score": -1000000,
+        "elapsedMs": 3.555774688720703,
+        "depth": 6,
+        "nodesVisited": 0,
+        "prunes": 0
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "id": "AI_log_31_01_2024_15_44_39_3vs4",
+    "createdAt": "2024-01-31T15:44:39Z",
+    "label": "Historic AI match \u00b7 depth 3 vs 4",
+    "mode": "ai-ai",
+    "players": {
+      "X": "ai",
+      "O": "ai"
+    },
+    "depths": {
+      "X": 3,
+      "O": 4
+    },
+    "outcome": "draw",
+    "moves": [
+      {
+        "board": 4,
+        "cell": 0,
+        "player": "X"
+      },
+      {
+        "board": 0,
+        "cell": 0,
+        "player": "O"
+      },
+      {
+        "board": 0,
+        "cell": 2,
+        "player": "X"
+      },
+      {
+        "board": 2,
+        "cell": 2,
+        "player": "O"
+      },
+      {
+        "board": 2,
+        "cell": 4,
+        "player": "X"
+      },
+      {
+        "board": 4,
+        "cell": 6,
+        "player": "O"
+      },
+      {
+        "board": 6,
+        "cell": 6,
+        "player": "X"
+      },
+      {
+        "board": 6,
+        "cell": 1,
+        "player": "O"
+      },
+      {
+        "board": 1,
+        "cell": 8,
+        "player": "X"
+      },
+      {
+        "board": 8,
+        "cell": 8,
+        "player": "O"
+      },
+      {
+        "board": 8,
+        "cell": 1,
+        "player": "X"
+      },
+      {
+        "board": 1,
+        "cell": 3,
+        "player": "O"
+      },
+      {
+        "board": 3,
+        "cell": 0,
+        "player": "X"
+      },
+      {
+        "board": 0,
+        "cell": 4,
+        "player": "O"
+      },
+      {
+        "board": 4,
+        "cell": 2,
+        "player": "X"
+      },
+      {
+        "board": 2,
+        "cell": 5,
+        "player": "O"
+      },
+      {
+        "board": 5,
+        "cell": 3,
+        "player": "X"
+      },
+      {
+        "board": 3,
+        "cell": 3,
+        "player": "O"
+      },
+      {
+        "board": 3,
+        "cell": 1,
+        "player": "X"
+      },
+      {
+        "board": 1,
+        "cell": 6,
+        "player": "O"
+      },
+      {
+        "board": 6,
+        "cell": 3,
+        "player": "X"
+      },
+      {
+        "board": 3,
+        "cell": 2,
+        "player": "O"
+      },
+      {
+        "board": 2,
+        "cell": 8,
+        "player": "X"
+      },
+      {
+        "board": 8,
+        "cell": 7,
+        "player": "O"
+      },
+      {
+        "board": 7,
+        "cell": 5,
+        "player": "X"
+      },
+      {
+        "board": 5,
+        "cell": 5,
+        "player": "O"
+      },
+      {
+        "board": 5,
+        "cell": 1,
+        "player": "X"
+      },
+      {
+        "board": 1,
+        "cell": 5,
+        "player": "O"
+      },
+      {
+        "board": 5,
+        "cell": 7,
+        "player": "X"
+      },
+      {
+        "board": 7,
+        "cell": 8,
+        "player": "O"
+      },
+      {
+        "board": 8,
+        "cell": 0,
+        "player": "X"
+      },
+      {
+        "board": 0,
+        "cell": 3,
+        "player": "O"
+      },
+      {
+        "board": 3,
+        "cell": 4,
+        "player": "X"
+      },
+      {
+        "board": 4,
+        "cell": 1,
+        "player": "O"
+      },
+      {
+        "board": 1,
+        "cell": 0,
+        "player": "X"
+      },
+      {
+        "board": 0,
+        "cell": 1,
+        "player": "O"
+      },
+      {
+        "board": 1,
+        "cell": 4,
+        "player": "X"
+      },
+      {
+        "board": 4,
+        "cell": 4,
+        "player": "O"
+      },
+      {
+        "board": 4,
+        "cell": 5,
+        "player": "X"
+      },
+      {
+        "board": 5,
+        "cell": 8,
+        "player": "O"
+      },
+      {
+        "board": 8,
+        "cell": 2,
+        "player": "X"
+      },
+      {
+        "board": 2,
+        "cell": 0,
+        "player": "O"
+      },
+      {
+        "board": 0,
+        "cell": 5,
+        "player": "X"
+      },
+      {
+        "board": 5,
+        "cell": 2,
+        "player": "O"
+      },
+      {
+        "board": 2,
+        "cell": 7,
+        "player": "X"
+      },
+      {
+        "board": 7,
+        "cell": 3,
+        "player": "O"
+      },
+      {
+        "board": 3,
+        "cell": 7,
+        "player": "X"
+      },
+      {
+        "board": 7,
+        "cell": 6,
+        "player": "O"
+      },
+      {
+        "board": 6,
+        "cell": 0,
+        "player": "X"
+      },
+      {
+        "board": 0,
+        "cell": 7,
+        "player": "O"
+      },
+      {
+        "board": 7,
+        "cell": 2,
+        "player": "X"
+      },
+      {
+        "board": 2,
+        "cell": 1,
+        "player": "O"
+      },
+      {
+        "board": 4,
+        "cell": 8,
+        "player": "X"
+      },
+      {
+        "board": 7,
+        "cell": 0,
+        "player": "O"
+      }
+    ],
+    "telemetry": [
+      {
+        "turn": 1,
+        "player": "X",
+        "move": {
+          "board": 4,
+          "cell": 0,
+          "player": "X"
+        },
+        "score": 1.0,
+        "elapsedMs": 330.2500247955322,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 2,
+        "player": "O",
+        "move": {
+          "board": 0,
+          "cell": 0,
+          "player": "O"
+        },
+        "score": 1.0,
+        "elapsedMs": 284.44671630859375,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 3,
+        "player": "X",
+        "move": {
+          "board": 0,
+          "cell": 2,
+          "player": "X"
+        },
+        "score": 1.0,
+        "elapsedMs": 72.04890251159668,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 4,
+        "player": "O",
+        "move": {
+          "board": 2,
+          "cell": 2,
+          "player": "O"
+        },
+        "score": 1.0,
+        "elapsedMs": 381.1008930206299,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 5,
+        "player": "X",
+        "move": {
+          "board": 2,
+          "cell": 4,
+          "player": "X"
+        },
+        "score": 1.0,
+        "elapsedMs": 93.91164779663086,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 6,
+        "player": "O",
+        "move": {
+          "board": 4,
+          "cell": 6,
+          "player": "O"
+        },
+        "score": 1.0,
+        "elapsedMs": 458.0247402191162,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 7,
+        "player": "X",
+        "move": {
+          "board": 6,
+          "cell": 6,
+          "player": "X"
+        },
+        "score": 1.0,
+        "elapsedMs": 105.8511734008789,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 8,
+        "player": "O",
+        "move": {
+          "board": 6,
+          "cell": 1,
+          "player": "O"
+        },
+        "score": 1.25,
+        "elapsedMs": 592.3683643341064,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 9,
+        "player": "X",
+        "move": {
+          "board": 1,
+          "cell": 8,
+          "player": "X"
+        },
+        "score": 1.25,
+        "elapsedMs": 106.38570785522461,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 10,
+        "player": "O",
+        "move": {
+          "board": 8,
+          "cell": 8,
+          "player": "O"
+        },
+        "score": 1.25,
+        "elapsedMs": 373.9283084869385,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 11,
+        "player": "X",
+        "move": {
+          "board": 8,
+          "cell": 1,
+          "player": "X"
+        },
+        "score": 1.25,
+        "elapsedMs": 60.277462005615234,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 12,
+        "player": "O",
+        "move": {
+          "board": 1,
+          "cell": 3,
+          "player": "O"
+        },
+        "score": 1.25,
+        "elapsedMs": 283.6565971374512,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 13,
+        "player": "X",
+        "move": {
+          "board": 3,
+          "cell": 0,
+          "player": "X"
+        },
+        "score": 1.25,
+        "elapsedMs": 86.28034591674805,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 14,
+        "player": "O",
+        "move": {
+          "board": 0,
+          "cell": 4,
+          "player": "O"
+        },
+        "score": 0.25,
+        "elapsedMs": 243.76344680786133,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 15,
+        "player": "X",
+        "move": {
+          "board": 4,
+          "cell": 2,
+          "player": "X"
+        },
+        "score": 0.25,
+        "elapsedMs": 116.40214920043945,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 16,
+        "player": "O",
+        "move": {
+          "board": 2,
+          "cell": 5,
+          "player": "O"
+        },
+        "score": 0.25,
+        "elapsedMs": 263.3018493652344,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 17,
+        "player": "X",
+        "move": {
+          "board": 5,
+          "cell": 3,
+          "player": "X"
+        },
+        "score": 0.25,
+        "elapsedMs": 120.147705078125,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 18,
+        "player": "O",
+        "move": {
+          "board": 3,
+          "cell": 3,
+          "player": "O"
+        },
+        "score": 1.25,
+        "elapsedMs": 412.7833843231201,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 19,
+        "player": "X",
+        "move": {
+          "board": 3,
+          "cell": 1,
+          "player": "X"
+        },
+        "score": 1.25,
+        "elapsedMs": 109.53855514526367,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 20,
+        "player": "O",
+        "move": {
+          "board": 1,
+          "cell": 6,
+          "player": "O"
+        },
+        "score": 1.25,
+        "elapsedMs": 274.41906929016113,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 21,
+        "player": "X",
+        "move": {
+          "board": 6,
+          "cell": 3,
+          "player": "X"
+        },
+        "score": 1.25,
+        "elapsedMs": 86.9448184967041,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 22,
+        "player": "O",
+        "move": {
+          "board": 3,
+          "cell": 2,
+          "player": "O"
+        },
+        "score": 1.25,
+        "elapsedMs": 136.82222366333008,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 23,
+        "player": "X",
+        "move": {
+          "board": 2,
+          "cell": 8,
+          "player": "X"
+        },
+        "score": 1.25,
+        "elapsedMs": 110.99767684936523,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 24,
+        "player": "O",
+        "move": {
+          "board": 8,
+          "cell": 7,
+          "player": "O"
+        },
+        "score": 2.0,
+        "elapsedMs": 179.60810661315918,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 25,
+        "player": "X",
+        "move": {
+          "board": 7,
+          "cell": 5,
+          "player": "X"
+        },
+        "score": 2.0,
+        "elapsedMs": 100.20112991333008,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 26,
+        "player": "O",
+        "move": {
+          "board": 5,
+          "cell": 5,
+          "player": "O"
+        },
+        "score": 2.25,
+        "elapsedMs": 192.50893592834473,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 27,
+        "player": "X",
+        "move": {
+          "board": 5,
+          "cell": 1,
+          "player": "X"
+        },
+        "score": 2.25,
+        "elapsedMs": 84.06281471252441,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 28,
+        "player": "O",
+        "move": {
+          "board": 1,
+          "cell": 5,
+          "player": "O"
+        },
+        "score": 2.0,
+        "elapsedMs": 208.62364768981934,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 29,
+        "player": "X",
+        "move": {
+          "board": 5,
+          "cell": 7,
+          "player": "X"
+        },
+        "score": 2.0,
+        "elapsedMs": 80.33514022827148,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 30,
+        "player": "O",
+        "move": {
+          "board": 7,
+          "cell": 8,
+          "player": "O"
+        },
+        "score": 2.5,
+        "elapsedMs": 136.63744926452637,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 31,
+        "player": "X",
+        "move": {
+          "board": 8,
+          "cell": 0,
+          "player": "X"
+        },
+        "score": 2.5,
+        "elapsedMs": 33.55526924133301,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 32,
+        "player": "O",
+        "move": {
+          "board": 0,
+          "cell": 3,
+          "player": "O"
+        },
+        "score": 2.75,
+        "elapsedMs": 103.66654396057129,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 33,
+        "player": "X",
+        "move": {
+          "board": 3,
+          "cell": 4,
+          "player": "X"
+        },
+        "score": 2.75,
+        "elapsedMs": 26.062488555908203,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 34,
+        "player": "O",
+        "move": {
+          "board": 4,
+          "cell": 1,
+          "player": "O"
+        },
+        "score": 4.25,
+        "elapsedMs": 70.7697868347168,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 35,
+        "player": "X",
+        "move": {
+          "board": 1,
+          "cell": 0,
+          "player": "X"
+        },
+        "score": 4.25,
+        "elapsedMs": 31.70180320739746,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 36,
+        "player": "O",
+        "move": {
+          "board": 0,
+          "cell": 1,
+          "player": "O"
+        },
+        "score": 9.0,
+        "elapsedMs": 126.82986259460449,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 37,
+        "player": "X",
+        "move": {
+          "board": 1,
+          "cell": 4,
+          "player": "X"
+        },
+        "score": 9.0,
+        "elapsedMs": 25.95996856689453,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 38,
+        "player": "O",
+        "move": {
+          "board": 4,
+          "cell": 4,
+          "player": "O"
+        },
+        "score": 15.0,
+        "elapsedMs": 76.27010345458984,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 39,
+        "player": "X",
+        "move": {
+          "board": 4,
+          "cell": 5,
+          "player": "X"
+        },
+        "score": 15.0,
+        "elapsedMs": 22.535085678100586,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 40,
+        "player": "O",
+        "move": {
+          "board": 5,
+          "cell": 8,
+          "player": "O"
+        },
+        "score": 28.5,
+        "elapsedMs": 73.03452491760254,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 41,
+        "player": "X",
+        "move": {
+          "board": 8,
+          "cell": 2,
+          "player": "X"
+        },
+        "score": 28.5,
+        "elapsedMs": 15.73944091796875,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 42,
+        "player": "O",
+        "move": {
+          "board": 2,
+          "cell": 0,
+          "player": "O"
+        },
+        "score": 37.0,
+        "elapsedMs": 84.1376781463623,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 43,
+        "player": "X",
+        "move": {
+          "board": 0,
+          "cell": 5,
+          "player": "X"
+        },
+        "score": 37.0,
+        "elapsedMs": 21.024703979492188,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 44,
+        "player": "O",
+        "move": {
+          "board": 5,
+          "cell": 2,
+          "player": "O"
+        },
+        "score": 39.0,
+        "elapsedMs": 185.5618953704834,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 45,
+        "player": "X",
+        "move": {
+          "board": 2,
+          "cell": 7,
+          "player": "X"
+        },
+        "score": 39.0,
+        "elapsedMs": 79.96606826782227,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 46,
+        "player": "O",
+        "move": {
+          "board": 7,
+          "cell": 3,
+          "player": "O"
+        },
+        "score": 46.25,
+        "elapsedMs": 255.16104698181152,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 47,
+        "player": "X",
+        "move": {
+          "board": 3,
+          "cell": 7,
+          "player": "X"
+        },
+        "score": 46.25,
+        "elapsedMs": 59.76462364196777,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 48,
+        "player": "O",
+        "move": {
+          "board": 7,
+          "cell": 6,
+          "player": "O"
+        },
+        "score": 91.0,
+        "elapsedMs": 222.4583625793457,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 49,
+        "player": "X",
+        "move": {
+          "board": 6,
+          "cell": 0,
+          "player": "X"
+        },
+        "score": 91.0,
+        "elapsedMs": 49.852609634399414,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 50,
+        "player": "O",
+        "move": {
+          "board": 0,
+          "cell": 7,
+          "player": "O"
+        },
+        "score": 137.25,
+        "elapsedMs": 165.7092571258545,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 51,
+        "player": "X",
+        "move": {
+          "board": 7,
+          "cell": 2,
+          "player": "X"
+        },
+        "score": 137.25,
+        "elapsedMs": 42.3128604888916,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 52,
+        "player": "O",
+        "move": {
+          "board": 2,
+          "cell": 1,
+          "player": "O"
+        },
+        "score": 137.5,
+        "elapsedMs": 105.95846176147461,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 53,
+        "player": "X",
+        "move": {
+          "board": 4,
+          "cell": 8,
+          "player": "X"
+        },
+        "score": 137.5,
+        "elapsedMs": 37.488698959350586,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 54,
+        "player": "O",
+        "move": {
+          "board": 7,
+          "cell": 0,
+          "player": "O"
+        },
+        "score": 137.5,
+        "elapsedMs": 5.513191223144531,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "id": "AI_log_31_01_2024_15_54_34_3vs4",
+    "createdAt": "2024-01-31T15:54:34Z",
+    "label": "Historic AI match \u00b7 depth 3 vs 4",
+    "mode": "ai-ai",
+    "players": {
+      "X": "ai",
+      "O": "ai"
+    },
+    "depths": {
+      "X": 3,
+      "O": 4
+    },
+    "outcome": "draw",
+    "moves": [
+      {
+        "board": 4,
+        "cell": 0,
+        "player": "X"
+      },
+      {
+        "board": 0,
+        "cell": 0,
+        "player": "O"
+      },
+      {
+        "board": 0,
+        "cell": 2,
+        "player": "X"
+      },
+      {
+        "board": 2,
+        "cell": 2,
+        "player": "O"
+      },
+      {
+        "board": 2,
+        "cell": 4,
+        "player": "X"
+      },
+      {
+        "board": 4,
+        "cell": 6,
+        "player": "O"
+      },
+      {
+        "board": 6,
+        "cell": 6,
+        "player": "X"
+      },
+      {
+        "board": 6,
+        "cell": 1,
+        "player": "O"
+      },
+      {
+        "board": 1,
+        "cell": 8,
+        "player": "X"
+      },
+      {
+        "board": 8,
+        "cell": 8,
+        "player": "O"
+      },
+      {
+        "board": 8,
+        "cell": 1,
+        "player": "X"
+      },
+      {
+        "board": 1,
+        "cell": 3,
+        "player": "O"
+      },
+      {
+        "board": 3,
+        "cell": 0,
+        "player": "X"
+      },
+      {
+        "board": 0,
+        "cell": 4,
+        "player": "O"
+      },
+      {
+        "board": 4,
+        "cell": 2,
+        "player": "X"
+      },
+      {
+        "board": 2,
+        "cell": 5,
+        "player": "O"
+      },
+      {
+        "board": 5,
+        "cell": 3,
+        "player": "X"
+      },
+      {
+        "board": 3,
+        "cell": 3,
+        "player": "O"
+      },
+      {
+        "board": 3,
+        "cell": 1,
+        "player": "X"
+      },
+      {
+        "board": 1,
+        "cell": 6,
+        "player": "O"
+      },
+      {
+        "board": 6,
+        "cell": 3,
+        "player": "X"
+      },
+      {
+        "board": 3,
+        "cell": 2,
+        "player": "O"
+      },
+      {
+        "board": 2,
+        "cell": 8,
+        "player": "X"
+      },
+      {
+        "board": 8,
+        "cell": 7,
+        "player": "O"
+      },
+      {
+        "board": 7,
+        "cell": 5,
+        "player": "X"
+      },
+      {
+        "board": 5,
+        "cell": 5,
+        "player": "O"
+      },
+      {
+        "board": 5,
+        "cell": 1,
+        "player": "X"
+      },
+      {
+        "board": 1,
+        "cell": 5,
+        "player": "O"
+      },
+      {
+        "board": 5,
+        "cell": 7,
+        "player": "X"
+      },
+      {
+        "board": 7,
+        "cell": 8,
+        "player": "O"
+      },
+      {
+        "board": 8,
+        "cell": 0,
+        "player": "X"
+      },
+      {
+        "board": 0,
+        "cell": 3,
+        "player": "O"
+      },
+      {
+        "board": 3,
+        "cell": 4,
+        "player": "X"
+      },
+      {
+        "board": 4,
+        "cell": 1,
+        "player": "O"
+      },
+      {
+        "board": 1,
+        "cell": 0,
+        "player": "X"
+      },
+      {
+        "board": 0,
+        "cell": 1,
+        "player": "O"
+      },
+      {
+        "board": 1,
+        "cell": 4,
+        "player": "X"
+      },
+      {
+        "board": 4,
+        "cell": 4,
+        "player": "O"
+      },
+      {
+        "board": 4,
+        "cell": 5,
+        "player": "X"
+      },
+      {
+        "board": 5,
+        "cell": 8,
+        "player": "O"
+      },
+      {
+        "board": 8,
+        "cell": 2,
+        "player": "X"
+      },
+      {
+        "board": 2,
+        "cell": 0,
+        "player": "O"
+      },
+      {
+        "board": 0,
+        "cell": 5,
+        "player": "X"
+      },
+      {
+        "board": 5,
+        "cell": 2,
+        "player": "O"
+      },
+      {
+        "board": 2,
+        "cell": 7,
+        "player": "X"
+      },
+      {
+        "board": 7,
+        "cell": 3,
+        "player": "O"
+      },
+      {
+        "board": 3,
+        "cell": 7,
+        "player": "X"
+      },
+      {
+        "board": 7,
+        "cell": 6,
+        "player": "O"
+      },
+      {
+        "board": 6,
+        "cell": 0,
+        "player": "X"
+      },
+      {
+        "board": 0,
+        "cell": 7,
+        "player": "O"
+      },
+      {
+        "board": 7,
+        "cell": 2,
+        "player": "X"
+      },
+      {
+        "board": 2,
+        "cell": 1,
+        "player": "O"
+      },
+      {
+        "board": 4,
+        "cell": 8,
+        "player": "X"
+      },
+      {
+        "board": 7,
+        "cell": 0,
+        "player": "O"
+      }
+    ],
+    "telemetry": [
+      {
+        "turn": 1,
+        "player": "X",
+        "move": {
+          "board": 4,
+          "cell": 0,
+          "player": "X"
+        },
+        "score": 1.0,
+        "elapsedMs": 314.60070610046387,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 2,
+        "player": "O",
+        "move": {
+          "board": 0,
+          "cell": 0,
+          "player": "O"
+        },
+        "score": 1.0,
+        "elapsedMs": 273.7908363342285,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 3,
+        "player": "X",
+        "move": {
+          "board": 0,
+          "cell": 2,
+          "player": "X"
+        },
+        "score": 1.0,
+        "elapsedMs": 72.89242744445801,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 4,
+        "player": "O",
+        "move": {
+          "board": 2,
+          "cell": 2,
+          "player": "O"
+        },
+        "score": 1.0,
+        "elapsedMs": 376.8270015716553,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 5,
+        "player": "X",
+        "move": {
+          "board": 2,
+          "cell": 4,
+          "player": "X"
+        },
+        "score": 1.0,
+        "elapsedMs": 94.93041038513184,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 6,
+        "player": "O",
+        "move": {
+          "board": 4,
+          "cell": 6,
+          "player": "O"
+        },
+        "score": 1.0,
+        "elapsedMs": 465.98339080810547,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 7,
+        "player": "X",
+        "move": {
+          "board": 6,
+          "cell": 6,
+          "player": "X"
+        },
+        "score": 1.0,
+        "elapsedMs": 112.17808723449707,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 8,
+        "player": "O",
+        "move": {
+          "board": 6,
+          "cell": 1,
+          "player": "O"
+        },
+        "score": 1.25,
+        "elapsedMs": 591.5679931640625,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 9,
+        "player": "X",
+        "move": {
+          "board": 1,
+          "cell": 8,
+          "player": "X"
+        },
+        "score": 1.25,
+        "elapsedMs": 138.25249671936035,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 10,
+        "player": "O",
+        "move": {
+          "board": 8,
+          "cell": 8,
+          "player": "O"
+        },
+        "score": 1.25,
+        "elapsedMs": 404.4466018676758,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 11,
+        "player": "X",
+        "move": {
+          "board": 8,
+          "cell": 1,
+          "player": "X"
+        },
+        "score": 1.25,
+        "elapsedMs": 72.55935668945312,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 12,
+        "player": "O",
+        "move": {
+          "board": 1,
+          "cell": 3,
+          "player": "O"
+        },
+        "score": 1.25,
+        "elapsedMs": 299.96585845947266,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 13,
+        "player": "X",
+        "move": {
+          "board": 3,
+          "cell": 0,
+          "player": "X"
+        },
+        "score": 1.25,
+        "elapsedMs": 87.25762367248535,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 14,
+        "player": "O",
+        "move": {
+          "board": 0,
+          "cell": 4,
+          "player": "O"
+        },
+        "score": 0.25,
+        "elapsedMs": 239.7325038909912,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 15,
+        "player": "X",
+        "move": {
+          "board": 4,
+          "cell": 2,
+          "player": "X"
+        },
+        "score": 0.25,
+        "elapsedMs": 104.94136810302734,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 16,
+        "player": "O",
+        "move": {
+          "board": 2,
+          "cell": 5,
+          "player": "O"
+        },
+        "score": 0.25,
+        "elapsedMs": 271.47436141967773,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 17,
+        "player": "X",
+        "move": {
+          "board": 5,
+          "cell": 3,
+          "player": "X"
+        },
+        "score": 0.25,
+        "elapsedMs": 122.08771705627441,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 18,
+        "player": "O",
+        "move": {
+          "board": 3,
+          "cell": 3,
+          "player": "O"
+        },
+        "score": 1.25,
+        "elapsedMs": 418.08223724365234,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 19,
+        "player": "X",
+        "move": {
+          "board": 3,
+          "cell": 1,
+          "player": "X"
+        },
+        "score": 1.25,
+        "elapsedMs": 110.26883125305176,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 20,
+        "player": "O",
+        "move": {
+          "board": 1,
+          "cell": 6,
+          "player": "O"
+        },
+        "score": 1.25,
+        "elapsedMs": 270.88189125061035,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 21,
+        "player": "X",
+        "move": {
+          "board": 6,
+          "cell": 3,
+          "player": "X"
+        },
+        "score": 1.25,
+        "elapsedMs": 84.67936515808105,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 22,
+        "player": "O",
+        "move": {
+          "board": 3,
+          "cell": 2,
+          "player": "O"
+        },
+        "score": 1.25,
+        "elapsedMs": 138.655424118042,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 23,
+        "player": "X",
+        "move": {
+          "board": 2,
+          "cell": 8,
+          "player": "X"
+        },
+        "score": 1.25,
+        "elapsedMs": 112.77079582214355,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 24,
+        "player": "O",
+        "move": {
+          "board": 8,
+          "cell": 7,
+          "player": "O"
+        },
+        "score": 2.0,
+        "elapsedMs": 177.53839492797852,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 25,
+        "player": "X",
+        "move": {
+          "board": 7,
+          "cell": 5,
+          "player": "X"
+        },
+        "score": 2.0,
+        "elapsedMs": 101.22156143188477,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 26,
+        "player": "O",
+        "move": {
+          "board": 5,
+          "cell": 5,
+          "player": "O"
+        },
+        "score": 2.25,
+        "elapsedMs": 202.4827003479004,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 27,
+        "player": "X",
+        "move": {
+          "board": 5,
+          "cell": 1,
+          "player": "X"
+        },
+        "score": 2.25,
+        "elapsedMs": 87.89205551147461,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 28,
+        "player": "O",
+        "move": {
+          "board": 1,
+          "cell": 5,
+          "player": "O"
+        },
+        "score": 2.0,
+        "elapsedMs": 207.19242095947266,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 29,
+        "player": "X",
+        "move": {
+          "board": 5,
+          "cell": 7,
+          "player": "X"
+        },
+        "score": 2.0,
+        "elapsedMs": 81.33912086486816,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 30,
+        "player": "O",
+        "move": {
+          "board": 7,
+          "cell": 8,
+          "player": "O"
+        },
+        "score": 2.5,
+        "elapsedMs": 146.98195457458496,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 31,
+        "player": "X",
+        "move": {
+          "board": 8,
+          "cell": 0,
+          "player": "X"
+        },
+        "score": 2.5,
+        "elapsedMs": 33.74218940734863,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 32,
+        "player": "O",
+        "move": {
+          "board": 0,
+          "cell": 3,
+          "player": "O"
+        },
+        "score": 2.75,
+        "elapsedMs": 110.9459400177002,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 33,
+        "player": "X",
+        "move": {
+          "board": 3,
+          "cell": 4,
+          "player": "X"
+        },
+        "score": 2.75,
+        "elapsedMs": 26.51667594909668,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 34,
+        "player": "O",
+        "move": {
+          "board": 4,
+          "cell": 1,
+          "player": "O"
+        },
+        "score": 4.25,
+        "elapsedMs": 89.22100067138672,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 35,
+        "player": "X",
+        "move": {
+          "board": 1,
+          "cell": 0,
+          "player": "X"
+        },
+        "score": 4.25,
+        "elapsedMs": 35.744667053222656,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 36,
+        "player": "O",
+        "move": {
+          "board": 0,
+          "cell": 1,
+          "player": "O"
+        },
+        "score": 9.0,
+        "elapsedMs": 150.3739356994629,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 37,
+        "player": "X",
+        "move": {
+          "board": 1,
+          "cell": 4,
+          "player": "X"
+        },
+        "score": 9.0,
+        "elapsedMs": 26.822805404663086,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 38,
+        "player": "O",
+        "move": {
+          "board": 4,
+          "cell": 4,
+          "player": "O"
+        },
+        "score": 15.0,
+        "elapsedMs": 75.96588134765625,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 39,
+        "player": "X",
+        "move": {
+          "board": 4,
+          "cell": 5,
+          "player": "X"
+        },
+        "score": 15.0,
+        "elapsedMs": 30.77840805053711,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 40,
+        "player": "O",
+        "move": {
+          "board": 5,
+          "cell": 8,
+          "player": "O"
+        },
+        "score": 28.5,
+        "elapsedMs": 75.1502513885498,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 41,
+        "player": "X",
+        "move": {
+          "board": 8,
+          "cell": 2,
+          "player": "X"
+        },
+        "score": 28.5,
+        "elapsedMs": 17.019987106323242,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 42,
+        "player": "O",
+        "move": {
+          "board": 2,
+          "cell": 0,
+          "player": "O"
+        },
+        "score": 37.0,
+        "elapsedMs": 83.9226245880127,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 43,
+        "player": "X",
+        "move": {
+          "board": 0,
+          "cell": 5,
+          "player": "X"
+        },
+        "score": 37.0,
+        "elapsedMs": 23.783445358276367,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 44,
+        "player": "O",
+        "move": {
+          "board": 5,
+          "cell": 2,
+          "player": "O"
+        },
+        "score": 39.0,
+        "elapsedMs": 207.289457321167,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 45,
+        "player": "X",
+        "move": {
+          "board": 2,
+          "cell": 7,
+          "player": "X"
+        },
+        "score": 39.0,
+        "elapsedMs": 85.69693565368652,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 46,
+        "player": "O",
+        "move": {
+          "board": 7,
+          "cell": 3,
+          "player": "O"
+        },
+        "score": 46.25,
+        "elapsedMs": 279.7081470489502,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 47,
+        "player": "X",
+        "move": {
+          "board": 3,
+          "cell": 7,
+          "player": "X"
+        },
+        "score": 46.25,
+        "elapsedMs": 61.96928024291992,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 48,
+        "player": "O",
+        "move": {
+          "board": 7,
+          "cell": 6,
+          "player": "O"
+        },
+        "score": 91.0,
+        "elapsedMs": 224.54190254211426,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 49,
+        "player": "X",
+        "move": {
+          "board": 6,
+          "cell": 0,
+          "player": "X"
+        },
+        "score": 91.0,
+        "elapsedMs": 50.51875114440918,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 50,
+        "player": "O",
+        "move": {
+          "board": 0,
+          "cell": 7,
+          "player": "O"
+        },
+        "score": 137.25,
+        "elapsedMs": 186.98740005493164,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 51,
+        "player": "X",
+        "move": {
+          "board": 7,
+          "cell": 2,
+          "player": "X"
+        },
+        "score": 137.25,
+        "elapsedMs": 46.54264450073242,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 52,
+        "player": "O",
+        "move": {
+          "board": 2,
+          "cell": 1,
+          "player": "O"
+        },
+        "score": 137.5,
+        "elapsedMs": 110.88371276855469,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 53,
+        "player": "X",
+        "move": {
+          "board": 4,
+          "cell": 8,
+          "player": "X"
+        },
+        "score": 137.5,
+        "elapsedMs": 41.92686080932617,
+        "depth": 3,
+        "nodesVisited": 0,
+        "prunes": 0
+      },
+      {
+        "turn": 54,
+        "player": "O",
+        "move": {
+          "board": 7,
+          "cell": 0,
+          "player": "O"
+        },
+        "score": 137.5,
+        "elapsedMs": 5.510807037353516,
+        "depth": 4,
+        "nodesVisited": 0,
+        "prunes": 0
+      }
+    ]
+  }
+]

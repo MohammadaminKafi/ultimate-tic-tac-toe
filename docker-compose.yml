@@ -1,0 +1,35 @@
+services:
+  app:
+    build:
+      context: .
+      target: development
+    command: npm run dev -- --host 0.0.0.0
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+
+  test:
+    build:
+      context: .
+      target: test
+
+  preview:
+    build:
+      context: .
+      target: preview
+    ports:
+      - "8080:8080"
+
+  e2e:
+    build:
+      context: .
+      target: e2e
+    environment:
+      PLAYWRIGHT_BASE_URL: http://preview:8080/ultimate-tic-tac-toe/
+    depends_on:
+      - preview
+
+volumes:
+  node_modules:

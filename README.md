@@ -1,74 +1,94 @@
-# Ultimate Tic-Tac-Toe AI
+# Ultimate Tic-Tac-Toe · Minimax Arena
 
-A Pygame implementation of Ultimate Tic-Tac-Toe with two computer players powered by depth-limited minimax and alpha-beta pruning. The repository also includes six historical AI-versus-AI games that can be replayed in the UI.
+A browser-native Ultimate Tic-Tac-Toe arena built with React, TypeScript,
+HeroUI, and a depth-limited minimax AI with alpha-beta pruning. Play against
+the AI, share the board locally, watch AI-versus-AI matches, or inspect saved
+and historical replays.
 
-## Game rules
+## Features
 
-The board contains nine 3-by-3 Tic-Tac-Toe boards. A move's cell determines the local board where the opponent must play next. If that destination board is already complete, the opponent may choose any unfinished board. Winning three local boards in a row wins the game; completing the global board without a winner is a draw.
+- Human vs AI, local two-player, and AI vs AI modes
+- Worker-based minimax search that keeps the interface responsive
+- Easy, Medium, Hard, and exact depth 1–6 controls
+- Dark-by-default quiet sci-fi interface with a persistent light theme
+- Local autosave, recent replay history, and validated JSON import/export
+- Six converted matches from the original Python implementation
+- Responsive and keyboard-accessible nested board
 
-## Setup
+## Run locally with Docker
 
-Python 3.10 or newer is recommended.
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python3 -m pip install -r requirements.txt
-```
-
-## Run a game
-
-From the repository root:
-
-```bash
-python3 src/main.py
-```
-
-The default configuration runs AI versus AI, with search depths 3 and 4. Player types, colors, and search depths are kept together in `src/ultimate_tic_tac_toe/config.py`. Set either `PLAYER_ONE_IS_HUMAN` or `PLAYER_TWO_IS_HUMAN` to `True` to control that player with the mouse.
-
-AI search becomes substantially slower as depth increases because the number of explored positions grows quickly.
-
-## Replay a recorded game
-
-Pass a log file to replay one move every half second:
+Docker is the supported local toolchain; Node.js is not required on the host.
 
 ```bash
-python3 src/main.py logs/AI_log_31_01_2024_14_33_50_6vs3.txt
+# Development server with hot reload
+docker compose up app
+# http://localhost:5173/ultimate-tic-tac-toe/
+
+# Lint, type-check, unit/component tests, and production build
+docker compose run --rm test
+
+# Production-like static preview
+docker compose up preview
+# http://localhost:8080/ultimate-tic-tac-toe/
+
+# Playwright tests against the preview service
+docker compose run --rm e2e
 ```
 
-Pass `1` as a second argument to advance with key presses:
+If Node 22 is available, the equivalent commands are `npm ci`, `npm run dev`,
+`npm run check`, and `npm run test:e2e`.
 
-```bash
-python3 src/main.py logs/AI_log_31_01_2024_14_33_50_6vs3.txt 1
-```
-
-## Project structure
+## Architecture
 
 ```text
 src/
-├── main.py                         # Backwards-compatible executable
-├── ai.py, heuristics.py, ...       # Backwards-compatible imports
-├── icon.png
-└── ultimate_tic_tac_toe/
-    ├── app.py                      # Pygame UI and application loops
-    ├── config.py                   # Display, player, and AI settings
-    ├── evaluation.py               # Board heuristic
-    ├── game.py                     # Game-state models and move rules
-    ├── game_logs.py                # Existing log file format
-    ├── search.py                   # Minimax with alpha-beta pruning
-    └── tree.py                     # Search nodes and legal move generation
-tests/                              # Engine and historical compatibility tests
-logs/                               # Recorded AI-versus-AI games
+├── components/       # HeroUI shell, board, setup, and analysis UI
+├── engine/           # Pure rules, heuristic, alpha-beta search, and tests
+├── pages/            # Play, Replays, and Learn routes
+├── persistence/      # Versioned replay validation and localStorage
+├── session/          # Reducer-driven live match lifecycle
+└── workers/          # Cancellable minimax Web Worker
+public/replays/       # Versioned historical replay fixtures
+e2e/                  # Playwright browser flows
+legacy/python/        # Original Pygame project and tests
 ```
 
-The original public names (`uttt_table`, `ttt_table`, `uttt_heuristic`, and `minimax_alphaBetaPrunning`) remain available, so existing scripts continue to work. Clearer names are exposed alongside them for new code.
+The web engine stores nine flat local boards. A move contains `board`, `cell`,
+and `player`, all using zero-based indexes. Search is deterministic and always
+iterates board and cell indexes from 0 through 8.
 
-## Tests
+## Replay format
 
-The test suite replays every historical game and verifies game outcomes,
-deterministic search behavior, corrected terminal scores, move validation, and
-safe handling of the historical log format.
+Exports use a versioned `GameRecordV1` JSON structure containing game mode,
+player configuration, AI depths, final outcome, legal move sequence, and AI
+telemetry. Imported files are schema-checked and fully replayed through the game
+engine before being stored.
+
+Only the 50 newest local games are retained. Active games are saved after every
+move and restored on the next visit.
+
+## Legacy Python project
+
+The original implementation remains runnable from `legacy/python/`:
 
 ```bash
+cd legacy/python
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install -r requirements.txt
+python3 src/main.py
 python3 -m unittest discover -s tests -v
 ```
+
+## GitHub Pages
+
+`.github/workflows/pages.yml` verifies pull requests and deploys every direct
+push to `web_app`. The Vite base path is configured for:
+
+<https://mohammadaminkafi.github.io/ultimate-tic-tac-toe/>
+
+Before the first deployment, open **Repository Settings → Pages** and set
+**Build and deployment → Source** to **GitHub Actions**. The workflow then
+builds `dist/`, uploads the Pages artifact, and deploys through the
+`github-pages` environment. It can also be run manually from the Actions tab
+while `web_app` is selected.

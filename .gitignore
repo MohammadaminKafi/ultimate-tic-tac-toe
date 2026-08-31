@@ -1,3 +1,11 @@
+# JavaScript build output and dependencies
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+.vite/
+
 # Python bytecode and tool caches
 __pycache__/
 *.py[cod]
@@ -15,6 +23,6 @@ env/
 .vscode/
 .DS_Store
 
-# New run logs (historical fixtures under logs/ remain tracked)
+# New legacy Python run logs (historical fixtures remain tracked)
 /AI_log_*.txt
 /log*.txt
