@@ -1,14 +1,19 @@
 """Read and write the project's historical game-log format."""
 
+import ast
 from datetime import datetime
 
 
 def load_game_log(path):
     """Load the final serialized game from a log file."""
-    with open(path, "r") as log_file:
+    game_log = None
+    with open(path, "r", encoding="utf-8") as log_file:
         for line in log_file:
-            # Logs are Python list representations in the original file format.
-            game_log = eval(line)  # noqa: S307
+            if line.strip():
+                # Preserve the historical list representation without executing code.
+                game_log = ast.literal_eval(line)
+    if not isinstance(game_log, list):
+        raise ValueError("game log must contain a serialized list of moves")
     return game_log
 
 
@@ -20,6 +25,6 @@ def save_game_log(entries, player_one_is_human, player_two_is_human, depths):
     else:
         file_name = f"AI_log_{timestamp}_{depths[0]}vs{depths[1]}.txt"
 
-    with open(file_name, "a") as log_file:
+    with open(file_name, "a", encoding="utf-8") as log_file:
         log_file.write(f"{entries}\n")
     return file_name

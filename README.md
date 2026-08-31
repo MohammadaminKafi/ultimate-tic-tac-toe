@@ -65,7 +65,9 @@ The original public names (`uttt_table`, `ttt_table`, `uttt_heuristic`, and `min
 
 ## Tests
 
-The test suite replays every historical game and verifies that the refactored engine produces the same results, heuristic values, deterministic moves, and alpha/beta values as the original code.
+The test suite replays every historical game and verifies game outcomes,
+deterministic search behavior, corrected terminal scores, move validation, and
+safe handling of the historical log format.
 
 ```bash
 python3 -m unittest discover -s tests -v

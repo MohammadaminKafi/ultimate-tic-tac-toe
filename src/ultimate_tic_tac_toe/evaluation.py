@@ -49,6 +49,7 @@ def uttt_heuristic(board, log_enabled=0):
             return 1_000_000
         if board.winner == "O":
             return -1_000_000
+        return 0
 
     subtables_won_x = 0
     subtables_lost_x = 0
@@ -88,7 +89,7 @@ def uttt_heuristic(board, log_enabled=0):
                         total_cell_value_o += value_weight
 
     free_choice_for_x = 0
-    if board.subtable_to_be_played == [None, None]:
+    if board.subtable_to_be_played == [None, None] and board.moves_log:
         free_choice_for_x = -1 if board.moves_log[-1][0] == "X" else 1
 
     global_wins, global_losses = _count_potential_lines(board.subtable_winner.table)

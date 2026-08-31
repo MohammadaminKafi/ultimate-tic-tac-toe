@@ -33,13 +33,17 @@ class GameApplication:
     def handle_click(self, position):
         if self.board.game_over:
             return
-        if position[0] > config.BOARD_PIXEL_SIZE or position[1] > config.BOARD_PIXEL_SIZE:
+        if not (
+            0 <= position[0] < config.BOARD_PIXEL_SIZE
+            and 0 <= position[1] < config.BOARD_PIXEL_SIZE
+        ):
             return
 
-        subtable_row = position[1] // 300
-        subtable_column = position[0] // 300
-        row = (position[1] % 300) // 100
-        column = (position[0] % 300) // 100
+        subtable_size = config.CELL_SIZE * 3
+        subtable_row = position[1] // subtable_size
+        subtable_column = position[0] // subtable_size
+        row = (position[1] % subtable_size) // config.CELL_SIZE
+        column = (position[0] % subtable_size) // config.CELL_SIZE
         print(
             f"Clicked on {position}: subtable {[subtable_row, subtable_column]}, "
             f"cell {[row, column]}"
@@ -60,11 +64,17 @@ class GameApplication:
     def draw_board(self):
         board = self.board
         required = board.subtable_to_be_played
+        subtable_size = config.CELL_SIZE * 3
         if required != [None, None]:
             pygame.draw.rect(
                 self.screen,
                 config.GRAY,
-                (required[1] * 300, required[0] * 300, 300, 300),
+                (
+                    required[1] * subtable_size,
+                    required[0] * subtable_size,
+                    subtable_size,
+                    subtable_size,
+                ),
             )
 
         for index in range(1, config.BOARD_SIZE):
@@ -85,7 +95,6 @@ class GameApplication:
                 width,
             )
 
-        draw = 0
         for subtable_row in range(3):
             for subtable_column in range(3):
                 local_board = board.subtable[subtable_row][subtable_column]
@@ -96,10 +105,15 @@ class GameApplication:
                         color = config.SECOND_PLAYER_COLOR
                     else:
                         color = config.WHITE
-                        draw = 1
-                    label = local_board.winner if not draw else "Nobody"
+                    label = local_board.winner or "Nobody"
                     text = self.block_symbol_font.render(label, True, color)
-                    self.screen.blit(text, (subtable_column * 300 + 30, subtable_row * 300))
+                    self.screen.blit(
+                        text,
+                        (
+                            subtable_column * subtable_size + 30,
+                            subtable_row * subtable_size,
+                        ),
+                    )
 
         for subtable_row in range(3):
             for row in range(3):
@@ -119,17 +133,26 @@ class GameApplication:
                         self.screen.blit(
                             text,
                             (
-                                subtable_column * 300 + column * 100 + 10,
-                                subtable_row * 300 + row * 100 + 5,
+                                subtable_column * subtable_size
+                                + column * config.CELL_SIZE
+                                + 10,
+                                subtable_row * subtable_size
+                                + row * config.CELL_SIZE
+                                + 5,
                             ),
                         )
 
         if board.game_over:
             if board.winner == "X":
                 color = config.FIRST_PLAYER_COLOR
+                label = "X wins!"
             elif board.winner == "O":
                 color = config.SECOND_PLAYER_COLOR
-            text = self.text_font.render(f"{board.winner} wins!", True, color)
+                label = "O wins!"
+            else:
+                color = config.WHITE
+                label = "Draw!"
+            text = self.text_font.render(label, True, color)
             self.screen.blit(text, (config.BOARD_PIXEL_SIZE + 20, 20))
 
     def write_replay_details(self, player, move, elapsed_time, heuristic_value):
@@ -152,18 +175,13 @@ class GameApplication:
 
     @staticmethod
     def _wait_for_key():
-        waiting = True
-        keep_step_through = True
-        while waiting:
+        while True:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
                     sys.exit()
                 if event.type == pygame.KEYDOWN:
-                    waiting = False
-                else:
-                    keep_step_through = False
-        return keep_step_through
+                    return
 
     def run_replay(self, log_path, step_through=False):
         entries = load_game_log(log_path)
@@ -177,14 +195,18 @@ class GameApplication:
                 move = entry[1]
                 self.handle_click(
                     (
-                        move[1] * 300 + move[3] * 100 + 50,
-                        move[0] * 300 + move[2] * 100 + 50,
+                        move[1] * config.CELL_SIZE * 3
+                        + move[3] * config.CELL_SIZE
+                        + config.CELL_SIZE // 2,
+                        move[0] * config.CELL_SIZE * 3
+                        + move[2] * config.CELL_SIZE
+                        + config.CELL_SIZE // 2,
                     )
                 )
                 turn_number += 1
 
             if step_through:
-                step_through = self._wait_for_key()
+                self._wait_for_key()
             else:
                 time.sleep(0.5)
 
@@ -204,8 +226,7 @@ class GameApplication:
         player_one_is_human = config.PLAYER_ONE_IS_HUMAN
         player_two_is_human = config.PLAYER_TWO_IS_HUMAN
         log_saved = False
-        if not player_one_is_human and not player_two_is_human:
-            ai_log = []
+        ai_log = []
 
         while True:
             for event in pygame.event.get():
@@ -255,8 +276,12 @@ class GameApplication:
                     )
                     self.handle_click(
                         (
-                            move[1] * 300 + move[3] * 100 + 50,
-                            move[0] * 300 + move[2] * 100 + 50,
+                            move[1] * config.CELL_SIZE * 3
+                            + move[3] * config.CELL_SIZE
+                            + config.CELL_SIZE // 2,
+                            move[0] * config.CELL_SIZE * 3
+                            + move[2] * config.CELL_SIZE
+                            + config.CELL_SIZE // 2,
                         )
                     )
 

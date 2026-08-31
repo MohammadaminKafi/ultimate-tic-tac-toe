@@ -20,12 +20,12 @@ class Node:
 
     def build_all_children_to_depth(self, player_turn, depth):
         """Build the complete legal move tree to ``depth``."""
-        if depth == 0 or self.board.game_over:
+        if depth <= 0 or self.board.game_over:
             return
 
         for move in legal_moves(self.board):
             new_board = copy.deepcopy(self.board)
-            new_board.make_move(*move, player_turn)
+            new_board.make_move(*move, player_turn, enforce_turn=False)
             new_node = Node(len(self.children), self, new_board, self.alpha, self.beta)
             self.add_child(new_node)
             next_player = "X" if player_turn == "O" else "O"
@@ -34,6 +34,9 @@ class Node:
 
 def legal_moves(board):
     """Yield legal move coordinates in the original deterministic order."""
+    if board.game_over:
+        return
+
     required = board.subtable_to_be_played
     free_choice = (
         required == [None, None]

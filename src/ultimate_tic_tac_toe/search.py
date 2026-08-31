@@ -12,42 +12,80 @@ MAX_SCORE = 1_000_000
 
 def minimax_alpha_beta_pruning(board, player, depth):
     """Return elapsed time, best move, alpha, and beta for a search."""
-    start_time = time.time()
+    if player not in ("X", "O"):
+        raise ValueError("player must be either X or O")
+    if not isinstance(depth, int) or isinstance(depth, bool) or depth < 1:
+        raise ValueError("depth must be a positive integer")
+    if board.game_over:
+        raise ValueError("cannot search a completed game")
+
+    start_time = time.perf_counter()
     root = Node(None, None, copy.deepcopy(board), MIN_SCORE, MAX_SCORE)
+    # Evaluation only needs the most recent move. Avoid copying the full game log
+    # again at every descendant in the search tree.
+    root.board.moves_log = root.board.moves_log[-1:]
     best_move(root, player, depth)
-    elapsed_time = time.time() - start_time
+    elapsed_time = time.perf_counter() - start_time
     return elapsed_time, root.best_move, root.alpha, root.beta
 
 
 def best_move(root, player, depth):
-    """Populate the best move and bounds for ``root`` recursively."""
-    for move in legal_moves(root.board):
-        new_board = copy.deepcopy(root.board)
-        new_board.make_move(*move, player)
-        new_node = Node(len(root.children), root, new_board, root.alpha, root.beta)
-        root.add_child(new_node)
+    """Populate the best move and relevant bound for ``root``."""
+    if player not in ("X", "O"):
+        raise ValueError("player must be either X or O")
+    if depth < 1:
+        raise ValueError("depth must be at least 1")
 
-        if depth - 1 != 0 and not new_board.game_over:
-            next_player = "X" if player == "O" else "O"
-            best_move(new_node, next_player, depth - 1)
-            candidate_values = (new_node.alpha, new_node.beta)
-        else:
-            value = uttt_heuristic(new_board)
-            candidate_values = (value,)
+    value, move = _search(
+        root.board,
+        player,
+        depth,
+        root.alpha,
+        root.beta,
+    )
+    root.best_move = move
+    if player == "X":
+        root.alpha = max(root.alpha, value)
+    else:
+        root.beta = min(root.beta, value)
 
-        if player == "X":
-            previous_alpha = root.alpha
-            root.alpha = max(root.alpha, *candidate_values)
-            if previous_alpha != root.alpha:
-                root.best_move = move
-        else:
-            previous_beta = root.beta
-            root.beta = min(root.beta, *candidate_values)
-            if previous_beta != root.beta:
-                root.best_move = move
 
-        if root.alpha >= root.beta:
-            return
+def _search(board, player, depth, alpha, beta):
+    """Return the position value and best move without retaining a search tree."""
+    if depth == 0 or board.game_over:
+        return uttt_heuristic(board), None
+
+    moves = legal_moves(board)
+    best = None
+
+    if player == "X":
+        value = MIN_SCORE
+        for move in moves:
+            new_board = copy.deepcopy(board)
+            new_board.make_move(*move, player, enforce_turn=False)
+            candidate, _ = _search(new_board, "O", depth - 1, alpha, beta)
+            if best is None or candidate > value:
+                value = candidate
+                best = move
+            alpha = max(alpha, value)
+            if alpha >= beta:
+                break
+    else:
+        value = MAX_SCORE
+        for move in moves:
+            new_board = copy.deepcopy(board)
+            new_board.make_move(*move, player, enforce_turn=False)
+            candidate, _ = _search(new_board, "X", depth - 1, alpha, beta)
+            if best is None or candidate < value:
+                value = candidate
+                best = move
+            beta = min(beta, value)
+            if alpha >= beta:
+                break
+
+    if best is None:
+        return uttt_heuristic(board), None
+    return value, best
 
 
 # Preserve the misspelled public function used by the original project.
