@@ -1,0 +1,21 @@
+"""Display and player settings for the Pygame application."""
+
+BOARD_SIZE = 9
+BOARD_PIXEL_SIZE = 900
+CELL_SIZE = BOARD_PIXEL_SIZE // BOARD_SIZE
+SIDEBAR_WIDTH = 400
+
+WHITE = (210, 210, 210)
+BLACK = (20, 20, 20)
+GRAY = (50, 50, 50)
+ORANGE = (255, 165, 0)
+LIGHT_GREEN = (100, 255, 100)
+
+FIRST_PLAYER_COLOR = ORANGE
+SECOND_PLAYER_COLOR = LIGHT_GREEN
+
+# False selects the AI and True selects a human player.
+PLAYER_ONE_IS_HUMAN = False
+PLAYER_TWO_IS_HUMAN = False
+AI_ONE_DEPTH = 3
+AI_TWO_DEPTH = 4
