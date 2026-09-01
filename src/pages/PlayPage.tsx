@@ -1,5 +1,5 @@
 import { Alert, Button, Card } from "@heroui/react";
-import { PanelRightClose, PanelRightOpen, Pause, Play, RefreshCcw, RotateCcw, Sparkles, StepForward } from "lucide-react";
+import { CircleStop, PanelRightClose, PanelRightOpen, Pause, Play, RefreshCcw, RotateCcw, Sparkles, StepForward } from "lucide-react";
 import { useState } from "react";
 
 import { GameBoard } from "../components/GameBoard";
@@ -28,8 +28,9 @@ export function PlayPage() {
 
   const status = state.game.result
     ? state.game.result === "draw" ? "Global draw" : `${state.game.result} controls the grid`
-    : state.thinking ? `${state.game.currentPlayer} is searching` : `${state.game.currentPlayer} to move`;
+    : state.thinking ? `${state.game.currentPlayer} is searching` : state.searchCancelled ? `${state.game.currentPlayer} search cancelled` : state.paused && state.configuration.players[state.game.currentPlayer] === "ai" ? "AI movement paused" : `${state.game.currentPlayer} to move`;
   const isAiArena = state.configuration.mode === "ai-ai";
+  const currentIsAi = state.configuration.players[state.game.currentPlayer] === "ai";
 
   return (
     <div className="page game-page">
@@ -54,11 +55,12 @@ export function PlayPage() {
           <div className="game-toolbar">
             {isAiArena && state.phase === "playing" && (
               <>
-                <Button variant="secondary" onPress={session.togglePause}>{state.paused ? <Play size={16} /> : <Pause size={16} />}{state.paused ? "Resume" : "Pause"}</Button>
+                <Button variant="secondary" onPress={state.paused ? session.resumeAiSearch : session.togglePause}>{state.paused ? <Play size={16} /> : <Pause size={16} />}{state.paused ? "Resume" : "Pause"}</Button>
                 <Button variant="ghost" isDisabled={!state.paused || state.thinking} onPress={session.step}><StepForward size={16} />Step</Button>
                 <label className="live-speed">Pace<select aria-label="AI playback speed" value={state.configuration.speedMs} onChange={(event) => session.setSpeed(Number(event.target.value))}><option value="200">Very fast</option><option value="400">Fast</option><option value="600">Normal</option><option value="800">Relaxed</option><option value="1000">Measured</option><option value="1200">Slow</option><option value="1400">Slower</option><option value="1600">Study</option></select></label>
               </>
             )}
+            {state.thinking && <Button variant="danger" onPress={session.cancelAiSearch}><CircleStop size={16} />Cancel search</Button>}
             <Button
               variant="ghost"
               aria-expanded={inspectorOpen}
@@ -73,7 +75,18 @@ export function PlayPage() {
           </div>
         </div>
         <aside className="game-sidebar">
-          {inspectorOpen && <div id="live-inspector"><GameInspector game={state.game} telemetry={state.telemetry} thinking={state.thinking} /></div>}
+          {inspectorOpen && <div id="live-inspector"><GameInspector
+            game={state.game}
+            telemetry={state.telemetry}
+            thinking={state.thinking}
+            pausedAi={state.paused && currentIsAi && state.phase === "playing" ? {
+              player: state.game.currentPlayer,
+              depth: state.configuration.depths[state.game.currentPlayer] ?? 4,
+              cancelled: state.searchCancelled,
+              onDepthChange: (depth) => session.setAiDepth(state.game.currentPlayer, depth),
+              onResume: session.resumeAiSearch,
+            } : undefined}
+          /></div>}
           {state.phase === "complete" && (
             <Card className="result-card" variant="secondary"><Card.Header><div className="eyebrow">Match complete</div><Card.Title>{state.game.result === "draw" ? "No line surrendered." : `${state.game.result} wins the arena.`}</Card.Title><Card.Description>The replay has been saved locally and is ready in the Replays page.</Card.Description></Card.Header><Card.Footer><Button variant="primary" onPress={session.restart}>Play again</Button><Button variant="ghost" onPress={session.newGame}>Change mode</Button></Card.Footer></Card>
           )}

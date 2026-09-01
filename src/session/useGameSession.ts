@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useReducer, useRef } from "react";
 
 import { applyMove, createGame } from "../engine/game";
+import { isSearchDepth } from "../engine/depth";
 import type { GameConfiguration, GameState, Move, SearchTelemetry } from "../engine/types";
 import {
   clearActiveGame,
@@ -10,7 +11,7 @@ import {
   saveRecords,
 } from "../persistence/storage";
 import type { MoveTelemetry } from "../persistence/schema";
-import { cancelSearch, requestSearch } from "../workers/client";
+import { cancelSearch, isSearchCancelled, requestSearch } from "../workers/client";
 
 interface SessionState {
   phase: "setup" | "playing" | "complete";
@@ -19,6 +20,7 @@ interface SessionState {
   telemetry: MoveTelemetry[];
   thinking: boolean;
   paused: boolean;
+  searchCancelled: boolean;
   restored: boolean;
   saved: boolean;
   error: string | null;
@@ -32,6 +34,9 @@ type Action =
   | { type: "THINKING"; value: boolean }
   | { type: "ERROR"; message: string }
   | { type: "TOGGLE_PAUSE" }
+  | { type: "CANCEL_SEARCH" }
+  | { type: "RESUME_SEARCH" }
+  | { type: "SET_AI_DEPTH"; player: "X" | "O"; depth: number }
   | { type: "SET_SPEED"; speedMs: number }
   | { type: "STEP" }
   | { type: "MARK_SAVED" }
@@ -41,7 +46,7 @@ type Action =
 export const DEFAULT_CONFIGURATION: GameConfiguration = {
   mode: "human-ai",
   players: { X: "human", O: "ai" },
-  depths: { O: 3 },
+  depths: { O: 4 },
   speedMs: 600,
 };
 
@@ -55,6 +60,7 @@ function initialState(): SessionState {
       telemetry: active.telemetry,
       thinking: false,
       paused: active.configuration.mode === "ai-ai",
+      searchCancelled: false,
       restored: true,
       saved: false,
       error: null,
@@ -68,6 +74,7 @@ function initialState(): SessionState {
     telemetry: [],
     thinking: false,
     paused: false,
+    searchCancelled: false,
     restored: false,
     saved: false,
     error: null,
@@ -86,6 +93,7 @@ function reducer(state: SessionState, action: Action): SessionState {
         telemetry: [],
         thinking: false,
         paused: false,
+        searchCancelled: false,
         restored: false,
         saved: false,
         error: null,
@@ -109,6 +117,7 @@ function reducer(state: SessionState, action: Action): SessionState {
           game,
           telemetry,
           thinking: false,
+          searchCancelled: false,
           error: null,
         };
       } catch (error) {
@@ -120,19 +129,37 @@ function reducer(state: SessionState, action: Action): SessionState {
       }
     }
     case "THINKING":
-      return { ...state, thinking: action.value, error: null };
+      return { ...state, thinking: action.value, searchCancelled: false, error: null };
     case "ERROR":
-      return { ...state, thinking: false, error: action.message };
+      return { ...state, thinking: false, searchCancelled: false, error: action.message };
     case "TOGGLE_PAUSE":
-      return { ...state, paused: !state.paused, thinking: false };
+      return { ...state, paused: !state.paused, thinking: false, searchCancelled: false };
+    case "CANCEL_SEARCH":
+      return { ...state, paused: true, thinking: false, searchCancelled: true, error: null };
+    case "RESUME_SEARCH":
+      return { ...state, paused: false, thinking: false, searchCancelled: false, error: null };
+    case "SET_AI_DEPTH":
+      if (!isSearchDepth(action.depth) || state.configuration.players[action.player] !== "ai") return state;
+      return {
+        ...state,
+        configuration: {
+          ...state.configuration,
+          depths: { ...state.configuration.depths, [action.player]: action.depth },
+        },
+        paused: true,
+        thinking: false,
+        searchCancelled: true,
+        error: null,
+      };
     case "SET_SPEED":
       return {
         ...state,
         configuration: { ...state.configuration, speedMs: action.speedMs },
         thinking: false,
+        searchCancelled: false,
       };
     case "STEP":
-      return { ...state, paused: true, stepNonce: state.stepNonce + 1 };
+      return { ...state, paused: true, searchCancelled: false, stepNonce: state.stepNonce + 1 };
     case "RESTORE_DISMISSED":
       return { ...state, restored: false };
     case "MARK_SAVED":
@@ -145,6 +172,7 @@ function reducer(state: SessionState, action: Action): SessionState {
         telemetry: [],
         thinking: false,
         paused: false,
+        searchCancelled: false,
         restored: false,
         saved: false,
         error: null,
@@ -195,7 +223,7 @@ export function useGameSession() {
     if (isStep) steppedRef.current = state.stepNonce;
     const snapshot = state.game;
     const player = snapshot.currentPlayer;
-    const depth = state.configuration.depths[player] ?? 3;
+    const depth = state.configuration.depths[player] ?? 4;
     const delay = state.configuration.mode === "ai-ai" ? state.configuration.speedMs : 180;
     dispatch({ type: "THINKING", value: true });
 
@@ -203,10 +231,10 @@ export function useGameSession() {
       requestSearch(snapshot, player, depth)
         .then((telemetry) => dispatch({ type: "MOVE", move: telemetry.move, telemetry }))
         .catch((error: unknown) =>
-          dispatch({
-            type: "ERROR",
-            message: error instanceof Error ? error.message : "AI search failed",
-          }),
+          !isSearchCancelled(error) && dispatch({
+              type: "ERROR",
+              message: error instanceof Error ? error.message : "AI search failed",
+            }),
         );
     }, delay);
 
@@ -253,6 +281,20 @@ export function useGameSession() {
     dispatch({ type: "SET_SPEED", speedMs });
   }, []);
 
+  const cancelAiSearch = useCallback(() => {
+    cancelSearch();
+    dispatch({ type: "CANCEL_SEARCH" });
+  }, []);
+
+  const setAiDepth = useCallback((player: "X" | "O", depth: number) => {
+    cancelSearch();
+    dispatch({ type: "SET_AI_DEPTH", player, depth });
+  }, []);
+
+  const resumeAiSearch = useCallback(() => {
+    dispatch({ type: "RESUME_SEARCH" });
+  }, []);
+
   return {
     state,
     start,
@@ -264,6 +306,9 @@ export function useGameSession() {
       dispatch({ type: "TOGGLE_PAUSE" });
     },
     setSpeed,
+    cancelAiSearch,
+    setAiDepth,
+    resumeAiSearch,
     step: () => dispatch({ type: "STEP" }),
     dismissRestore: () => dispatch({ type: "RESTORE_DISMISSED" }),
   };

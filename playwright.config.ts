@@ -1,6 +1,7 @@
 import { defineConfig, devices } from "@playwright/test";
 
 const baseURL = process.env.PLAYWRIGHT_BASE_URL ?? "http://127.0.0.1:4173/ultimate-tic-tac-toe/";
+const operaExecutable = process.env.PLAYWRIGHT_OPERA_EXECUTABLE;
 
 export default defineConfig({
   testDir: "./e2e",
@@ -21,6 +22,15 @@ export default defineConfig({
   projects: [
     { name: "chromium", use: { ...devices["Desktop Chrome"] } },
     { name: "mobile", use: { ...devices["Pixel 7"] } },
+    ...(operaExecutable
+      ? [{
+          name: "opera",
+          use: {
+            ...devices["Desktop Chrome"],
+            launchOptions: { executablePath: operaExecutable },
+          },
+        }]
+      : []),
   ],
   webServer: process.env.PLAYWRIGHT_BASE_URL
     ? undefined

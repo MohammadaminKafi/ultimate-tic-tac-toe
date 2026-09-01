@@ -37,4 +37,13 @@ describe("replay persistence", () => {
     expect(() => parseImportedRecords("[]")).toThrow(/no games/);
     expect(loadHistory()).toEqual([]);
   });
+
+  it("keeps version-one records compatible with depth ten", () => {
+    const deep = structuredClone(replayFixtures[0]!);
+    deep.depths.X = 10;
+    deep.telemetry.forEach((item) => {
+      if (item.player === "X") item.depth = 10;
+    });
+    expect(parseImportedRecords(JSON.stringify(deep))[0]?.depths.X).toBe(10);
+  });
 });

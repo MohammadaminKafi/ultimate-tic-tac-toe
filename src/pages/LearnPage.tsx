@@ -1,12 +1,11 @@
 import { Button, Card } from "@heroui/react";
 import { ArrowRight, ExternalLink, GitBranch, Grid3X3, Route, ShieldCheck } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { LearnWalkthrough } from "../components/LearnWalkthrough";
 
 export function LearnPage() {
-  const navigate = useNavigate();
   return (
     <div className="page learn-page">
-      <section className="page-intro learn-intro"><div className="eyebrow">Rules + reasoning</div><h1>One move. Two consequences.</h1><p>Ultimate Tic-Tac-Toe keeps the familiar three-in-a-row goal, then turns every cell into a routing decision.</p><Button variant="primary" onPress={() => navigate("/")}>Start a match <ArrowRight size={16} /></Button></section>
+      <section className="page-intro learn-intro"><div className="eyebrow">Rules + reasoning</div><h1>One move. Two consequences.</h1><p>Ultimate Tic-Tac-Toe keeps the familiar three-in-a-row goal, then turns every cell into a routing decision.</p><Button variant="primary" onPress={() => document.getElementById("guided-lessons")?.scrollIntoView({ behavior: "smooth" })}>Begin walkthrough <ArrowRight size={16} /></Button></section>
 
       <section className="rule-steps">
         <RuleCard number="01" icon={<Grid3X3 />} title="Play locally">Place your mark in any open cell of the highlighted local board.</RuleCard>
@@ -14,11 +13,7 @@ export function LearnPage() {
         <RuleCard number="03" icon={<ShieldCheck />} title="Claim the arena">Win three local boards in a global row, column, or diagonal.</RuleCard>
       </section>
 
-      <section className="routing-demo">
-        <div className="demo-board source-board" aria-label="Routing example source board">{Array.from({ length: 9 }, (_, index) => <span key={index} className={index === 7 ? "chosen" : ""}>{index === 7 ? "X" : ""}</span>)}</div>
-        <div className="route-arrow"><ArrowRight /><small>Cell 8 routes to board 8</small></div>
-        <div className="demo-board destination-board" aria-label="Routing example destination board">{Array.from({ length: 9 }, (_, index) => <span key={index} className={index === 7 ? "target" : ""} />)}</div>
-      </section>
+      <LearnWalkthrough />
 
       <section className="algorithm-section">
         <div><div className="eyebrow"><GitBranch size={14} /> Inside the opponent</div><h2>Minimax reads the futures.</h2><p>The engine expands legal replies to a chosen depth. X maximizes a position score; O minimizes it. Alpha–beta bounds discard branches that cannot change the decision, producing the same move with less work.</p></div>

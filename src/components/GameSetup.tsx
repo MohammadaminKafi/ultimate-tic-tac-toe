@@ -2,21 +2,19 @@ import { Alert, Button, Card } from "@heroui/react";
 import { Bot, BotIcon, Swords, Users } from "lucide-react";
 import { useMemo, useState } from "react";
 
+import { DEEP_SEARCH_DEPTH, MAX_SEARCH_DEPTH, MIN_SEARCH_DEPTH, depthForStrength, type Strength } from "../engine/depth";
 import type { GameConfiguration, GameMode, Player } from "../engine/types";
+import { AppSlider } from "./AppSlider";
 
 type Side = Player | "random";
-type Strength = "easy" | "medium" | "hard" | "advanced";
-
-const depthFor = (strength: Strength, advanced: number) =>
-  strength === "easy" ? 1 : strength === "medium" ? 3 : strength === "hard" ? 4 : advanced;
 
 export function GameSetup({ onStart }: { onStart: (configuration: GameConfiguration) => void }) {
   const [mode, setMode] = useState<GameMode>("human-ai");
   const [side, setSide] = useState<Side>("X");
   const [xStrength, setXStrength] = useState<Strength>("medium");
   const [oStrength, setOStrength] = useState<Strength>("medium");
-  const [xAdvanced, setXAdvanced] = useState(4);
-  const [oAdvanced, setOAdvanced] = useState(4);
+  const [xAdvanced, setXAdvanced] = useState(6);
+  const [oAdvanced, setOAdvanced] = useState(6);
   const [speedMs, setSpeedMs] = useState(600);
 
   const resolvedSide = useMemo<Player>(
@@ -24,10 +22,10 @@ export function GameSetup({ onStart }: { onStart: (configuration: GameConfigurat
     [side],
   );
   const humanAiPlayer = resolvedSide === "X" ? "O" : "X";
-  const humanAiDepth = humanAiPlayer === "X" ? depthFor(xStrength, xAdvanced) : depthFor(oStrength, oAdvanced);
+  const humanAiDepth = humanAiPlayer === "X" ? depthForStrength(xStrength, xAdvanced) : depthForStrength(oStrength, oAdvanced);
   const advancedWarning =
-    (mode === "ai-ai" && (depthFor(xStrength, xAdvanced) >= 5 || depthFor(oStrength, oAdvanced) >= 5)) ||
-    (mode === "human-ai" && humanAiDepth >= 5);
+    (mode === "ai-ai" && (depthForStrength(xStrength, xAdvanced) >= DEEP_SEARCH_DEPTH || depthForStrength(oStrength, oAdvanced) >= DEEP_SEARCH_DEPTH)) ||
+    (mode === "human-ai" && humanAiDepth >= DEEP_SEARCH_DEPTH);
 
   const launch = () => {
     const players =
@@ -40,8 +38,8 @@ export function GameSetup({ onStart }: { onStart: (configuration: GameConfigurat
       mode,
       players,
       depths: {
-        ...(players.X === "ai" ? { X: depthFor(xStrength, xAdvanced) } : {}),
-        ...(players.O === "ai" ? { O: depthFor(oStrength, oAdvanced) } : {}),
+        ...(players.X === "ai" ? { X: depthForStrength(xStrength, xAdvanced) } : {}),
+        ...(players.O === "ai" ? { O: depthForStrength(oStrength, oAdvanced) } : {}),
       },
       speedMs,
     });
@@ -99,16 +97,15 @@ export function GameSetup({ onStart }: { onStart: (configuration: GameConfigurat
         )}
 
         {mode === "ai-ai" && (
-          <label className="range-control">
-            <span><strong>Move pace</strong><small>{speedMs} ms between moves</small></span>
-            <input type="range" min="200" max="1600" step="200" value={speedMs} onChange={(event) => setSpeedMs(Number(event.target.value))} />
-          </label>
+          <div className="pace-control">
+            <AppSlider label="Move pace" value={speedMs} min={200} max={1600} step={200} output={`${speedMs} ms between moves`} onChange={setSpeedMs} />
+          </div>
         )}
 
         {advancedWarning && (
           <Alert status="warning">
             <Alert.Indicator />
-            <Alert.Content><Alert.Title>Deep search</Alert.Title><Alert.Description>Depths 5–6 can take noticeably longer, but the interface will remain responsive.</Alert.Description></Alert.Content>
+            <Alert.Content><Alert.Title>Exact deep search</Alert.Title><Alert.Description>Depths 7–10 can take minutes or longer. The interface remains responsive, and you can cancel, adjust the depth, and retry without losing the position.</Alert.Description></Alert.Content>
           </Alert>
         )}
       </Card.Content>
@@ -128,16 +125,25 @@ function Choice({ active, onPress, icon, title, detail }: { active: boolean; onP
 }
 
 function StrengthControl({ player, strength, advanced, onStrength, onAdvanced }: { player: Player; strength: Strength; advanced: number; onStrength: (value: Strength) => void; onAdvanced: (value: number) => void }) {
+  const depth = depthForStrength(strength, advanced);
   return (
     <fieldset className={`strength-control player-${player.toLowerCase()}`}>
-      <legend>{player} AI strength</legend>
-      <div className="segmented compact">
+      <legend><span className="profile-sigil">{player}</span><span>{player} AI profile</span><strong>Depth {depth}</strong></legend>
+      <div className="strength-options">
         {(["easy", "medium", "hard", "advanced"] as const).map((value) => (
           <Button key={value} size="sm" variant={strength === value ? "secondary" : "ghost"} onPress={() => onStrength(value)}>{value}</Button>
         ))}
       </div>
       {strength === "advanced" && (
-        <label className="range-control"><span><strong>Depth {advanced}</strong><small>1–6 ply</small></span><input type="range" min="1" max="6" value={advanced} onChange={(event) => onAdvanced(Number(event.target.value))} /></label>
+        <AppSlider
+          label={`${player} exact search depth`}
+          value={advanced}
+          min={MIN_SEARCH_DEPTH}
+          max={MAX_SEARCH_DEPTH}
+          output={`Depth ${advanced}`}
+          tone={player.toLowerCase() as "x" | "o"}
+          onChange={onAdvanced}
+        />
       )}
     </fieldset>
   );

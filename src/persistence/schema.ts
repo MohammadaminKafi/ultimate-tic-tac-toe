@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { MAX_SEARCH_DEPTH, MIN_SEARCH_DEPTH } from "../engine/depth";
 
 export const playerSchema = z.enum(["X", "O"]);
 export const gameModeSchema = z.enum(["human-ai", "local", "ai-ai"]);
@@ -14,7 +15,7 @@ export const telemetrySchema = z.object({
   move: moveSchema,
   score: z.number().finite(),
   elapsedMs: z.number().finite().nonnegative(),
-  depth: z.number().int().min(1).max(6),
+  depth: z.number().int().min(MIN_SEARCH_DEPTH).max(MAX_SEARCH_DEPTH),
   nodesVisited: z.number().int().nonnegative(),
   prunes: z.number().int().nonnegative(),
 });
@@ -22,7 +23,10 @@ export const telemetrySchema = z.object({
 export const gameConfigurationSchema = z.object({
   mode: gameModeSchema,
   players: z.object({ X: z.enum(["human", "ai"]), O: z.enum(["human", "ai"]) }),
-  depths: z.object({ X: z.number().int().min(1).max(6).optional(), O: z.number().int().min(1).max(6).optional() }),
+  depths: z.object({
+    X: z.number().int().min(MIN_SEARCH_DEPTH).max(MAX_SEARCH_DEPTH).optional(),
+    O: z.number().int().min(MIN_SEARCH_DEPTH).max(MAX_SEARCH_DEPTH).optional(),
+  }),
   speedMs: z.number().int().min(100).max(3000),
 });
 

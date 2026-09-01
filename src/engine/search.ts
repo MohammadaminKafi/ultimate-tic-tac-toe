@@ -1,4 +1,5 @@
 import { applyMove, legalMoves } from "./game";
+import { isSearchDepth, MAX_SEARCH_DEPTH, MIN_SEARCH_DEPTH } from "./depth";
 import { evaluate, MAX_SCORE, MIN_SCORE } from "./evaluation";
 import type { GameState, Move, Player, SearchTelemetry } from "./types";
 
@@ -54,8 +55,8 @@ function minimax(
 export function searchBestMove(state: GameState, player: Player, depth: number): SearchTelemetry {
   if (state.result !== null) throw new Error("Cannot search a completed game");
   if (state.currentPlayer !== player) throw new Error(`Expected ${state.currentPlayer} to move`);
-  if (!Number.isInteger(depth) || depth < 1 || depth > 6) {
-    throw new Error("Depth must be an integer from 1 to 6");
+  if (!isSearchDepth(depth)) {
+    throw new Error(`Depth must be an integer from ${MIN_SEARCH_DEPTH} to ${MAX_SEARCH_DEPTH}`);
   }
 
   const counters: SearchCounters = { nodesVisited: 0, prunes: 0 };

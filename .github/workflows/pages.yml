@@ -41,6 +41,14 @@ jobs:
         run: npx playwright install --with-deps chromium
       - name: End-to-end smoke tests
         run: npm run test:e2e -- --project=chromium
+      - name: Install current Opera stable
+        run: |
+          wget -qO- https://deb.opera.com/archive.key | gpg --dearmor | sudo dd of=/usr/share/keyrings/opera-browser.gpg
+          echo "deb [signed-by=/usr/share/keyrings/opera-browser.gpg] https://deb.opera.com/opera-stable/ stable non-free" | sudo dd of=/etc/apt/sources.list.d/opera-archive.list
+          sudo apt-get update
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y gsettings-desktop-schemas opera-stable
+      - name: Opera slider smoke test
+        run: PLAYWRIGHT_OPERA_EXECUTABLE="$(command -v opera)" npm run test:e2e -- --project=opera --grep "Opera smoke"
       - name: Configure Pages
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/web_app'
         uses: actions/configure-pages@v6

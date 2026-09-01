@@ -6,9 +6,11 @@ interface GameBoardProps {
   onMove?: (board: number, cell: number) => void;
   readOnly?: boolean;
   thinking?: boolean;
+  allowUnavailableAttempts?: boolean;
+  onUnavailableMove?: (board: number, cell: number) => void;
 }
 
-export function GameBoard({ state, onMove, readOnly = false, thinking = false }: GameBoardProps) {
+export function GameBoard({ state, onMove, readOnly = false, thinking = false, allowUnavailableAttempts = false, onUnavailableMove }: GameBoardProps) {
   const lastMove = state.moves.at(-1);
   const globalLine = WINNING_LINES.find(([a, b, c]) => {
     const value = state.localResults[a];
@@ -35,6 +37,7 @@ export function GameBoard({ state, onMove, readOnly = false, thinking = false }:
             <div className="local-grid" role="rowgroup">
               {board.map((cell, cellIndex) => {
                 const legal = !readOnly && !thinking && isLegalMove(state, boardIndex, cellIndex);
+                const attemptable = allowUnavailableAttempts && !readOnly && !thinking && cell === null && result === null && state.result === null;
                 const isLast = lastMove?.board === boardIndex && lastMove.cell === cellIndex;
                 return (
                   <button
@@ -42,11 +45,11 @@ export function GameBoard({ state, onMove, readOnly = false, thinking = false }:
                     type="button"
                     role="gridcell"
                     className={`game-cell ${cell ? `mark-${cell.toLowerCase()}` : ""} ${isLast ? "is-last" : ""}`}
-                    disabled={!legal}
+                    disabled={!legal && !attemptable}
                     aria-label={`Board ${boardIndex + 1}, cell ${cellIndex + 1}${cell ? `, ${cell}` : legal ? ", playable" : ", unavailable"}`}
-                    onClick={() => legal && onMove?.(boardIndex, cellIndex)}
+                    onClick={() => legal ? onMove?.(boardIndex, cellIndex) : attemptable && onUnavailableMove?.(boardIndex, cellIndex)}
                   >
-                    {cell}
+                    {cell && <span className="mark-glyph" aria-hidden="true">{cell}</span>}
                   </button>
                 );
               })}

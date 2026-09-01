@@ -41,8 +41,20 @@ describe("alpha-beta search", () => {
   });
 
   it("rejects invalid depth and completed games", () => {
-    expect(() => searchBestMove(createGame(), "X", 0)).toThrow(/1 to 6/);
+    expect(() => searchBestMove(createGame(), "X", 0)).toThrow(/1 to 10/);
+    expect(() => searchBestMove(createGame(), "X", 11)).toThrow(/1 to 10/);
     expect(() => searchBestMove({ ...createGame(), result: "draw" }, "X", 2)).toThrow(/completed/);
+  });
+
+  it("accepts an exact depth-ten search", () => {
+    const state = createGame();
+    state.requiredBoard = 2;
+    state.localResults = ["X", "X", null, "draw", "draw", "draw", "draw", "draw", "draw"];
+    state.boards[2] = ["X", "X", null, "O", "O", "X", "X", "O", "O"];
+    const result = searchBestMove(state, "X", 10);
+    expect(result.depth).toBe(10);
+    expect(result.move).toEqual({ board: 2, cell: 2, player: "X" });
+    expect(result.score).toBe(MAX_SCORE);
   });
 
   it("still selects the first deterministic move when every line is a forced loss", () => {

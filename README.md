@@ -9,7 +9,9 @@ and historical replays.
 
 - Human vs AI, local two-player, and AI vs AI modes
 - Worker-based minimax search that keeps the interface responsive
-- Easy, Medium, Hard, and exact depth 1–6 controls
+- Easy (depth 2), Medium (depth 4), Hard (depth 6), and exact depth 1–10 controls
+- Cancellable deep searches with same-position depth adjustment and retry
+- Six engine-backed guided lessons with action-and-consequence feedback
 - Dark-by-default quiet sci-fi interface with a persistent light theme
 - Local autosave, recent replay history, and validated JSON import/export
 - Six converted matches from the original Python implementation
